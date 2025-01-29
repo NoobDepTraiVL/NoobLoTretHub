@@ -5,10 +5,10 @@ local MainTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
 MainTab:AddButton({
-	Name = "Script",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NoobDepTraiVL/NoobDepTraiVL/refs/heads/main/NoobDepTrai Hub"))()
+	Name = "test",
+	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/NoobDepTraiVL/NoobDepTraiVL/refs/heads/main/NoobDepTrai Hub"))()
   	end    
 })
 
