@@ -7,7 +7,7 @@ local MainTab = Window:MakeTab({
 })
 MainTab:AddButton({
 	Name = "Script",
-	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/NoobDepTraiVL/NoobDepTraiVL/refs/heads/main/NoobDepTrai Hub"))()
+	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/NoobDepTraiVL/NoobDepTraiVL/refs/heads/main/NoobDepTrai Hub"))()
   	end    
 })
 
