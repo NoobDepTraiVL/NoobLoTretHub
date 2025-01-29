@@ -1,11 +1,11 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({IntroText = "NoobLoTretHub :D",Name = "NoobLoTretHub", HidePremium = false, SaveConfig = true, ConfigFolder = "Thank For Use :3"})
-local Tab = Window:MakeTab({
+local MainTab = Window:MakeTab({
 	Name = "Tab 1",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
-Tab:AddButton({
-	Name = "Button!",
+MainTab:AddButton({
+	Name = "Script",
 	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/NoobDepTraiVL/NoobDepTraiVL/refs/heads/main/NoobDepTrai Hub"))()
   	end    
 })
