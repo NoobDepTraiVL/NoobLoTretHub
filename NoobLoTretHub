@@ -13,3 +13,9 @@ OrionLib:MakeNotification({
 	Content = "Notification content... what will it say??",
 	Image = "rbxassetid://4483345998",
 	Time = 5
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/NoobDepTraiVL/NoobDepTraiVL/refs/heads/main/NoobDepTrai Hub"))()
+      		print("button pressed")
+  	end    
+})
