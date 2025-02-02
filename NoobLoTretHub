@@ -77,6 +77,29 @@ do
             print("Keybind changed!", New)
         end
     })
+    Keybind:OnClick(function()
+        print("Keybind clicked:", Keybind:GetState())
+    end)
+
+    Keybind:OnChanged(function()
+        print("Keybind changed:", Keybind.Value)
+    end)
+
+    task.spawn(function()
+        while true do
+            wait(1)
+
+            -- example for checking if a keybind is being pressed
+            local state = Keybind:GetState()
+            if state then
+                print("Keybind is being held down")
+            end
+
+            if Fluent.Unloaded then break end
+        end
+    end)
+
+    Keybind:SetValue("MB2", "Toggle")
 
 -- Addons:
 -- SaveManager (Allows you to have a configuration system)
