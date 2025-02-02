@@ -3,12 +3,12 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "NoobLoTret Hub v1.0 "
-    SubTitle = "By @YTB_NoobMemeRoblox/On Youtube",
+    Title = "Fluent " .. Fluent.Version,
+    SubTitle = "by dawid",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Aqua",
+    Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
 
@@ -27,6 +27,14 @@ do
         SubContent = "SubContent", -- Optional
         Duration = 5 -- Set to nil to make the notification not disappear
     })
+
+
+
+    Tabs.Main:AddParagraph({
+        Title = "Thank For Use",
+        Content = "Have Fun :D!"
+    })
+
 
 
     Tabs.Main:AddButton({
@@ -53,6 +61,25 @@ do
             })
         end
     })
+
+
+
+    
+    local TColorpicker = Tabs.Main:AddColorpicker("TransparencyColorpicker", {
+        Title = "Colorpicker",
+        Description = "but you can change the transparency.",
+        Transparency = 0,
+        Default = Color3.fromRGB(96, 205, 255)
+    })
+
+    TColorpicker:OnChanged(function()
+        print(
+            "TColorpicker changed:", TColorpicker.Value,
+            "Transparency:", TColorpicker.Transparency
+        )
+    end)
+
+
 
     local Keybind = Tabs.Main:AddKeybind("Keybind", {
         Title = "KeyBind",
@@ -143,7 +170,7 @@ Window:SelectTab(1)
 
 Fluent:Notify({
     Title = "Fluent",
-    Content = "The Script Loading Is Done!",
+    Content = "The script has been loaded.",
     Duration = 8
 })
 
