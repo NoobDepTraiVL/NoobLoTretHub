@@ -22,7 +22,7 @@ Main:AddButton({
         CallBack = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe./main/Sword%20man'),true))()
         end
-    })
+})
     Fluent:Notify({
         Title = "NoobLoTretHub",
         Content = "Thank for use script",
