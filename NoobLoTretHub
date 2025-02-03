@@ -65,18 +65,14 @@ newsec:UpdateSection("Fe Script")
 local label = newsec:Label("Fe Script","This Script Work All Game But Have Some Games Not Working!")
 
 local button = newsec:Button("Fe Walk On Wall,"You Can Walk On Wall",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/artas01/artas01/main/walkonwall_imnotscriptdeveloper"))()
-end)
 
-local button = newsec:Button("Fe ShiftLock(v2),"ShiftLock On Mobile",function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Unknownproooolucky/Unknown-Hub-X-Universal-Games/main/Universal/Permanent-Shiftlock-V2'))()
-end)
+local tab3 = Window:Tab("Setting")
 
-local button = newsec:Button("Fe Telekinesis(v5),"You Can Control Block",function()
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty11.lua"))()
-end)
+local newsec = tab2:Section("Section")
 
-newsec:Line()
+newsec:UpdateSection("Setting For Hub")
+
+local label = newsec:Label("Setting For Hub","You Can Edit The Hub Same Your Setting")
 
 newsec:KeyBind("Example Key Bind","Q",function()
 	Hawk:ToggleUI()
