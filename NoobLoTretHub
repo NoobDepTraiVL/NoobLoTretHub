@@ -3,7 +3,7 @@ _Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
 local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
 
 local Window = Hawk:Window({
-	ScriptName = "Hawk HUB",
+	ScriptName = "NoobLoTret Hub v1.0",
 	DestroyIfExists = true,
 	Theme = "Dark" 
 })
@@ -22,18 +22,18 @@ Window:Minimize({
 	end,
 })
 
-local tab1 = Window:Tab("Tab")
+local tab1 = Window:Tab("Main")
 
 local newsec = tab1:Section("Section")
 
-newsec:UpdateSection("New Section Text")
+newsec:UpdateSection("Thank For Use :D")
 
-local label = newsec:Label("New Label","Example Description")
+local label = newsec:Label("Have Fun :D","You Can Use Now :D")
 
-label:UpdateLabel("Label","Spyro on top")
+label:UpdateLabel("Label","NoobLoTret Hub Create 03/2/2025")
 
-local button = newsec:Button("New Button","Example Description",function()
-	print("Button")
+local button = newsec:Button("test","Example Description",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe./main/Sword%20man'),true))()
 end)
 
 newsec:Line()
@@ -44,4 +44,4 @@ end)
 
 local Notifications = Hawk:AddNotifications()
 
-Notifications:Notification("Title","Description","Notification Type",Cooldown)
+Notifications:Notification("Thank For Use","Have Fun With Script","Let's Go!",Cooldown)
