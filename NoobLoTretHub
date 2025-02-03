@@ -30,7 +30,7 @@ newsec:UpdateSection("Thank For Use :D")
 
 local label = newsec:Label("Have Fun :D","You Can Use Now :D")
 
-label:UpdateLabel("Label","NoobLoTret Hub Create 03/2/2025")
+label:UpdateLabel("Info Script","NoobLoTret Hub Create 03/2/2025")
 
 local button = newsec:Button("test","Example Description",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe./main/Sword%20man'),true))()
