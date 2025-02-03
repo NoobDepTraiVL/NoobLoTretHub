@@ -22,11 +22,15 @@ Window:Minimize({
 	end,
 })
 
-newsec:Paragraph("Paragraph Title",{"Hawk HUB on top","This is a text","Hello again","Mechanism"})
+local tab1 = Window:Tab("Tab")
+
+local newsec = tab1:Section("Section")
+
+newsec:UpdateSection("New Section Text")
 
 local label = newsec:Label("New Label","Example Description")
 
-local tab1 = Window:Tab("Tab") 
+label:UpdateLabel("Label","Spyro on top")
 
 local button = newsec:Button("New Button","Example Description",function()
 	print("Button")
@@ -37,5 +41,7 @@ newsec:Line()
 newsec:KeyBind("Example Key Bind","Q",function()
 	Hawk:ToggleUI()
 end)
+
+local Notifications = Hawk:AddNotifications()
 
 Notifications:Notification("Title","Description","Notification Type",Cooldown)
