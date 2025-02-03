@@ -22,7 +22,7 @@ Main:AddButton({
         CallBack = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe./main/Sword%20man'),true))()
         end
-})
+    })
     Fluent:Notify({
         Title = "NoobLoTretHub",
         Content = "Thank for use script",
@@ -36,17 +36,6 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe./main/Sword
         Title = "Thank For Use",
         Content = "Have Fun :D!"
     })
-
-
-
-    Tabs.Main:AddButton({
-        Title = "Button",
-        Description = "Very important button",
-        Callback = function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe./main/Sword%20man'),true))()
-        end
-    })
-
     local Keybind = Tabs.Main:AddKeybind("Keybind", {
         Title = "KeyBind",
         Mode = "Toggle", -- Always, Toggle, Hold
