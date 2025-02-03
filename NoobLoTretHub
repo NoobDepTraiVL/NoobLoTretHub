@@ -22,15 +22,15 @@ Window:Minimize({
 	end,
 })
 
-local tab1 = Window:Tab("Tab") 
+newsec:Paragraph("Paragraph Title",{"Hawk HUB on top","This is a text","Hello again","Mechanism"})
 
-local label = newsec:Label("New Label","Example Description") 
+local label = newsec:Label("New Label","Example Description")
+
+local tab1 = Window:Tab("Tab") 
 
 local button = newsec:Button("New Button","Example Description",function()
 	print("Button")
 end)
-
-newsec:Paragraph("Paragraph Title",{"Hawk HUB on top","This is a text","Hello again","Mechanism"})
 
 newsec:Line()
 
