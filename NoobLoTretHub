@@ -11,7 +11,7 @@ local Window = Fluent:CreateWindow({
     Theme = "Aqua",
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
-Enum. KeyCode.LeftControl })
+                  Enum. KeyCode.LeftControl })
 
 local Discord = Window: AddTab({
 
