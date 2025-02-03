@@ -35,3 +35,5 @@ newsec:Line()
 newsec:KeyBind("Example Key Bind","Q",function()
 	Hawk:ToggleUI()
 end)
+
+Notifications:Notification("Title","Description","Notification Type",Cooldown)
