@@ -74,6 +74,12 @@ newsec:UpdateSection("Setting For Hub")
 
 local label = newsec:Label("Setting For Hub","You Can Edit The Hub Same Your Setting")
 
+newsec:ColorPicker("Color Picker Title",Color3.fromRGB(39, 39, 39),function(xd)
+	print(xd)
+end)
+
+newsec:Line()
+
 newsec:KeyBind("Example Key Bind","Q",function()
 	Hawk:ToggleUI()
 end)
