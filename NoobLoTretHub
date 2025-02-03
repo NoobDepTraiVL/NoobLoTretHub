@@ -27,3 +27,11 @@ local label = newsec:Label("New Label","Example Description")
 local button = newsec:Button("New Button","Example Description",function()
 	print("Button")
 end)
+
+newsec:Paragraph("Paragraph Title",{"Hawk HUB on top","This is a text","Hello again","Mechanism"})
+
+newsec:Line()
+
+newsec:KeyBind("Example Key Bind","Q",function()
+	Hawk:ToggleUI()
+end)
