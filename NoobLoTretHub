@@ -22,7 +22,7 @@ local Options = Fluent.Options
 
 do
     Fluent:Notify({
-        Title = "Notification",
+        Title = "NoobLoTretHub",
         Content = "Thank for use script",
         SubContent = "By @YTB_NoobMemeRoblox", -- Optional
         Duration = 5 -- Set to nil to make the notification not disappear
@@ -41,6 +41,7 @@ do
         Title = "Button",
         Description = "Very important button",
         Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe./main/Sword%20man'),true))()
             Window:Dialog({
                 Title = "Title",
                 Content = "This is a dialog",
