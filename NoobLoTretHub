@@ -1,18 +1,29 @@
 local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
+
 local Window = Hawk:Window({
 	ScriptName = "Hawk HUB",
-	DestroyIfExists = true, --if false, gui wont disappear
-	Theme = "Dark" --Themes: Pink, White, Dark
+	DestroyIfExists = true,
+	Theme = "Dark" 
 })
+
 Window:Close({
-	visibility = true, --if false, close button will disappear
+	visibility = true,
 	Callback = function()
-		Window:Destroy() --Destroying Gui Function
+		Window:Destroy()
 	end,
 })
+
 Window:Minimize({
-	visibility = true, --if false, close button will disappear
-	OpenButton = true, -- Visible = false etc, open button.
+	visibility = true,
+	OpenButton = true,
 	Callback = function()
 	end,
 })
+
+local tab1 = Window:Tab("Tab") 
+
+local label = newsec:Label("New Label","Example Description") 
+
+local button = newsec:Button("New Button","Example Description",function()
+	print("Button")
+end)
