@@ -90,7 +90,7 @@ newsec:UpdateSection("Admin Tab")
 
 local label = newsec:Label("Admin Tab","Warning Admin Script Is Not Real Admin Only Cmds And Function!")
 
-label:UpdateLabel("Admin Script","Warning Admin Script Is Not Real Admin Only Cmds And Function!")
+label:UpdateLabel("Admin Tab","Only Cmds And Function!")
 
 local button = newsec:Button("Infinite Yield(v6.2)","Infinite Yield Is Best Admin Script, IY Is Better Than all",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
