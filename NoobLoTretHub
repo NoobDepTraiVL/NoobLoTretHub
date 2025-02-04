@@ -44,6 +44,10 @@ local button = newsec:Button("Fly Gui(v3)","You Can Fly",function()
 loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-v3-7412"))()
 end)
 
+local button = newsec:Button("Owl Hub Esp","You Can See Everyone",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
 local button = newsec:Button("Drop Gui","You Can Drop Tool",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Xiam0i/Zub-Hub/main/Universal%20Scripts/Drop%20Item%20%7C%20Mobile%20GUI')))()
 end)
@@ -62,9 +66,9 @@ local newsec = tab2:Section("Section")
 
 newsec:UpdateSection("Fe Script")
 
-local label = newsec:Label("Fe Script","This Script Work All Game But Have Some Games Not Working!")
+local label = newsec:Label("Fe Script","This Script Work All Game But Have Some Games Not Work")
 
-label:UpdateLabel("Fe Script","This Script Work All Game But Have Some Games Not Working :<")
+label:UpdateLabel("Fe Script","This Script Work All Game But Have Some Games Not Work")
 
 local button = newsec:Button("Fe Walk On Wall","You Can Walk On Wall",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/artas01/artas01/main/walkonwall_imnotscriptdeveloper"))()
