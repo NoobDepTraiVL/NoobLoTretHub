@@ -32,6 +32,22 @@ local label = newsec:Label("Have Fun :D","You Can Use Now :D")
 
 label:UpdateLabel("Info Script","NoobLoTret Hub Create 03/2/2025")
 
+local button = newsec:Button("NetLess","Will Make Your Body Not Fall When Use Fe",function()
+for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+game:GetService("RunService").Heartbeat:connect(function()
+v.Velocity = Vector3.new(-30,0,0)
+end)
+end
+end
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Notification";
+    Text = "Netless Ran";
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 16;
+end)
+
 local button = newsec:Button("PShade Ultimate(Shader)","Will Make Your Game Better Graphic(No Lag)",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/randomstring0/pshade-ultimate/refs/heads/main/src/cd.lua'))()
 end)
