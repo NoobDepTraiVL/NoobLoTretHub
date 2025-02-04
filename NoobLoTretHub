@@ -82,9 +82,31 @@ local button = newsec:Button("Fe Shiftlock(v2)","Shiftlock On Mobile",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Unknownproooolucky/Unknown-Hub-X-Universal-Games/main/Universal/Permanent-Shiftlock-V2'))()
 end)
 
-local tab3 = Window:Tab("Setting")
+local tab3 = Window:Tab("Admin")
 
 local newsec = tab3:Section("Section")
+
+newsec:UpdateSection("Warning: Admin Script Is Not Real Admin, Only Cmds And Function!")
+
+local label = newsec:Label("Admin Script","Not Real Admin!")
+
+lanel:UpdateLabel("Admin Script","Not Real Admin!")
+
+local button = newsec:Button("Admin Hub","Have Some Admin Cmds",function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/obeskit/Adminware/main/Adminware")()
+end)
+
+local button = newsec:Button("Nameless Admin(v2.2)","Nameless Admin Is Good...",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/refs/heads/main/Source.lua", true))()
+end)
+
+local button = newsec:Button("Proton Admin","Proton Admin",function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5e6e6cc1bb32fd926764d064e2c60a3b.lua"))()
+end)
+
+local tab4 = Window:Tab("Setting")
+
+local newsec = tab4:Section("Section")
 
 newsec:UpdateSection("Setting For Hub")
 
