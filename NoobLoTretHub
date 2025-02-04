@@ -92,6 +92,10 @@ local label = newsec:Label("Admin Script","Not Real Admin!")
 
 lanel:UpdateLabel("Admin Script","Not Real Admin!")
 
+local button = newsec:Button("Infinite Yield(v6.2)","Infinite Yield Is Best Admin Script, IY Is Better Than all",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
 local button = newsec:Button("Admin Hub","Have Some Admin Cmds",function()
 loadstring(game:HttpGet"https://raw.githubusercontent.com/obeskit/Adminware/main/Adminware")()
 end)
