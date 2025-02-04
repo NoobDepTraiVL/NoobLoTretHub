@@ -49,7 +49,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/maste
 end)
 
 local button = newsec:Button("Drop Gui","You Can Drop Tool",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NoobDepTraiVL/Slasher/refs/heads/main/Drop item"))()
 end)
 
 local button = newsec:Button("Speed And Jumppower","You Can Edit Your WalkSpeed And Jumppower",function()
