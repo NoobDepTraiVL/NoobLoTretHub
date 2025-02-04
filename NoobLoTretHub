@@ -70,6 +70,10 @@ local label = newsec:Label("Fe Script","This Script Work All Game But Have Some 
 
 label:UpdateLabel("Fe Script","This Script Work All Game But Have Some Games Not Work")
 
+local button = newsec:Button("Fe Server Admin","People Can See Only Animation!(Need NetLess)",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ONEReverseCard/My-Scripts/main/Netless%20Server%20Admin.md"))()
+end)
+
 local button = newsec:Button("Fe Walk On Wall","You Can Walk On Wall",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/artas01/artas01/main/walkonwall_imnotscriptdeveloper"))()
 end)
@@ -91,10 +95,6 @@ newsec:UpdateSection("Admin Tab")
 local label = newsec:Label("Admin Tab","Warning Admin Script Is Not Real Admin Only Cmds And Function!")
 
 label:UpdateLabel("Admin Tab","Only Cmds And Function!")
-
-local button = newsec:Button("Infinite Yield(v6.2)","Infinite Yield Is Best Admin Script, IY Is Better Than all",function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
 
 local button = newsec:Button("Admin Hub","Have Some Admin Cmds",function()
 loadstring(game:HttpGet"https://raw.githubusercontent.com/obeskit/Adminware/main/Adminware")()
