@@ -32,7 +32,11 @@ local label = newsec:Label("Have Fun :D","You Can Use Now :D")
 
 label:UpdateLabel("Info Script","NoobLoTret Hub Create 03/2/2025")
 
-local button = newsec:Button("NetLess","Will Make Your Body Not Fall When Use Fe",function()
+local button = newsec:Button("Invisible Gui","People Cant See You",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NoobDepTraiVL/Aura-Craft-2-/refs/heads/main/Invisible?token=GHSAT0AAAAAAC52H67YEJ5TWWS7Q2ADSQRUZ5C6HUA"))()
+end)
+
+local button = newsec:Button("NetLess","Will Make Your Hats Not Fall When Use Fe",function()
 for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
 if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
 game:GetService("RunService").Heartbeat:connect(function()
