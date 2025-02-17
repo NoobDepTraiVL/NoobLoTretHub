@@ -1,1 +1,204 @@
-([[This file was protected with MoonSec V3]]):gsub('.+', (function(a) _qRjqVHUZWBsx = a; end)); return(function(o,...)local u;local f;local r;local c;local t;local l;local e=24915;local n=0;local d={};while n<195 do n=n+1;while n<0x79 and e%0x1b92<0xdc9 do n=n+1 e=(e*390)%22161 local h=n+e if(e%0x3d12)>=0x1e89 then e=(e*0xd8)%0x4deb while n<0xb7 and e%0x3eba<0x1f5d do n=n+1 e=(e*860)%46833 local l=n+e if(e%0x2440)>=0x1220 then e=(e+0x11a)%0x8c71 local e=57867 if not d[e]then d[e]=0x1 r=getfenv and getfenv();end elseif e%2~=0 then e=(e+0x1a2)%0x46a5 local e=35521 if not d[e]then d[e]=0x1 r=(not r)and _ENV or r;end else e=(e-0x5f)%0x3e4 n=n+1 local e=51680 if not d[e]then d[e]=0x1 c=tonumber;end end end elseif e%2~=0 then e=(e-0x3ee)%0xbbaf while n<0x3ab and e%0x138c<0x9c6 do n=n+1 e=(e*171)%41586 local r=n+e if(e%0x226a)>=0x1135 then e=(e-0x1e2)%0x4e55 local e=92671 if not d[e]then d[e]=0x1 t=string;end elseif e%2~=0 then e=(e*0x33e)%0x34d9 local e=68284 if not d[e]then d[e]=0x1 u={};end else e=(e-0x153)%0xa5f7 n=n+1 local e=64177 if not d[e]then d[e]=0x1 f="\4\8\116\111\110\117\109\98\101\114\122\106\117\77\65\97\95\81\0\6\115\116\114\105\110\103\4\99\104\97\114\75\82\119\89\65\104\99\101\0\6\115\116\114\105\110\103\3\115\117\98\108\102\67\74\103\97\108\111\0\6\115\116\114\105\110\103\4\98\121\116\101\109\122\87\101\110\79\85\118\0\5\116\97\98\108\101\6\99\111\110\99\97\116\83\104\76\90\71\122\86\111\0\5\116\97\98\108\101\6\105\110\115\101\114\116\81\108\98\115\122\114\106\77\5";end end end else e=(e*0x2c6)%0xb6ef n=n+1 while n<0x86 and e%0x3428<0x1a14 do n=n+1 e=(e+606)%13346 local f=n+e if(e%0x4bc0)<=0x25e0 then e=(e*0x19c)%0xb3a7 local e=90507 if not d[e]then d[e]=0x1 l=function(l)local e=0x01 local function d(n)e=e+n return l:sub(e-n,e-0x01)end while true do local n=d(0x01)if(n=="\5")then break end local e=t.byte(d(0x01))local e=d(e)if n=="\2"then e=u.zjuMAa_Q(e)elseif n=="\3"then e=e~="\0"elseif n=="\6"then r[e]=function(e,n)return o(8,nil,o,n,e)end elseif n=="\4"then e=r[e]elseif n=="\0"then e=r[e][d(t.byte(d(0x01)))];end local n=d(0x08)u[n]=e end end end elseif e%2~=0 then e=(e*0x174)%0x3bec local e=62913 if not d[e]then d[e]=0x1 end else e=(e*0x2db)%0x77b n=n+1 local e=92559 if not d[e]then d[e]=0x1 end end end end end e=(e-870)%33079 end l(f);local e={};for n=0x0,0xff do local d=u.KRwYAhce(n);e[n]=d;e[d]=n;end local function a(n)return e[n];end local a=(function(h,t)local f,d=0x01,0x10 local n={{},{},{}}local r=-0x01 local e=0x01 local l=h while true do n[0x03][u.lfCJgalo(t,e,(function()e=f+e return e-0x01 end)())]=(function()r=r+0x01 return r end)()if r==(0x0f)then r=""d=0x000 break end end local r=#t while e<r+0x01 do n[0x02][d]=u.lfCJgalo(t,e,(function()e=f+e return e-0x01 end)())d=d+0x01 if d%0x02==0x00 then d=0x00 u.QlbszrjM(n[0x01],(a((((n[0x03][n[0x02][0x00]]or 0x00)*0x10)+(n[0x03][n[0x02][0x01]]or 0x00)+l)%0x100)));l=h+l;end end return u.ShLZGzVo(n[0x01])end);l(a(124,"Cq{b R:+yUpPh6eryU"));l(a(62,"^Dj=,I82yGvol >bljyvoG2l=lbIol22 8byloyI,vK,v yDIlD>vGG>,Goa2=vsIIDI>jv,8GD b,G,8>DD GlDpo Db>lj2o,jCvl GjI,3boj2GIDDv8y=?Ibjj>jGo8jD 2 v2I =j>=vv,G=yl v,IV,2YGG2D, vMIooG(,8vIl>yy,ojp vG=Ivbj>Dvv,ob> l,FBv==>2oy2=j b>v yj=Db,lF2o,=bDv>yv=hA,l82=>loDljG=I=j8>=vyjobl bo48ljybyyvIll>G<lI2D=osyovy,,yD,o=Gjj=Jb8yjGj=b,>IGlI=rI>G2l=llry8o,2D=2bvov2==vbIl=8==b ll 8jjD>o8wj2Iyp2lvG8IDo,>Iv+8,D2 ovI8jDjlboII2jo jGGD5 ,AIlky,=2bolI8y==D_ 22vIlD,>,=0b=jX>,G 8,jlobv ,>Ml Ivv8lDDy>IjyD=Ib>oG2G,l >oj8oIj>>v>yo=Gvv2(GoIDj8 l=oI>j8>ov 2jj b8G 2jD8>IG,Io 2"));local e=(86+(function()local t,d=0,1;(function(e,n,d,r)e(r(d and n,e,d,e),e(n,n,e,d),e(d,e and e,e,r),r(n,e,e,e and n))end)(function(r,e,l,n)if t>171 then return l end t=t+1 d=(d-170)%16443 if(d%462)>231 then return e else return r(e(e,n,e and r,e)and e(r,n,l,l),e(l,e and l,r,e),l(r,r and e,n,r)and l(e,l,l,e),r(n,r and n,r,l))end return r(r(e,r,n,n),l(e,e,l,e),l(n,l,r,e),n(n,e,n and n,e and n)and e(r and e,n,n,e))end,function(r,l,n,e)if t>242 then return e end t=t+1 d=(d-221)%216 if(d%1862)>=931 then d=(d-193)%22008 return r(e(e,l and l,r,e),e(e,l,n,r and n)and l(e and l,n,l,e and r),n(n,e,e,e and e),n(r,n,e and r,l))else return e end return r end,function(l,e,r,n)if t>294 then return e end t=t+1 d=(d*137)%42761 if(d%900)>450 then return r(n(r,n and e,e,e),n(n,n,r,l),r(l,l,e,l)and n(e and e,e,e,e),e(r,n,r and n,e))else return e end return r end,function(n,e,r,l)if t>109 then return e end t=t+1 d=(d+311)%34894 if(d%950)>475 then return e(e(n,n and n,e,l),l(e,n and n,l and r,n),e(e,n,e,l and e),r(e,r,e,r))else return n end return r end)return d;end)())local h=u.LUpuVvlz or u.fTOsSeJO;local le=(getfenv)or(function()return _ENV end);local f=4;local l=3;local r=2;local p=1;local function re(k,...)local s=a(e,"bdX&#4^Her.DSR>{{^dS..&eSr4R>XH1{>RXH{SeerXHS##rR>H<eRdR.^&#SX.{X^SRHd{&drDd&XSF#>&URX4r{#H{SXH^XRD>{.DR^r>rd4.{X>DS#.XDSD^e{^HrYSr&R.e>#4R^dXSee&{>XRS.#^R#^X#r>RedD.^DdHDX{XD4^d>dX.>^r4XD^Xv..X>{e&wer^X#vN.{#PSr#D>#X^R{^#D&#^SS4.>eSd^rZDeXdRrR&SDS>re<0XrJd>{S.S&HS.4&>oXZS{eWdH.d&#4H{XH6{>eS4SdRr{&+D^z%SX^D..^DdD.^&eDr4#Rd{Rred^.#&XAXS&#4R^4S.^44dVr#R>e>&DRS^.{%HH.&&&DS#.Re.H4e>{Hr3SX{SX#eR^^#&R>4eH{>rrX..H&e^4{DH>%Sr.HdX#..#de7#dR{HSKdr^Xe#4>44>>SH.^d14rrRXe&X{S.-.DDH4mXr^XX.R&eH.X.>XH&{4eDDd4DS.4e>^SXHd{{e3{e.rdSSe#r>^XFR^rd)S4ekrS^#HRdHX{d&.Re^r{&e#k{.)XSDS#R.r#&SX4aR>DX4{.e^RF4r>XD^>XDRedeRRH4w>rSSd^dR.^e{^S^HHd#.XXdDS{eD.4S>&H>D>H.XrD.#&S44>.B4rR>XRDD#^R#^X##R{^>rRX{D^##RX.>4&{_4^{RrrXH#4R^4>>SH.#.ZDreX^.{&S4{2&Hep^r#^&R,rd#dDS<eS.^4{## {R.X>..S#>RrXXRRH{d4.e>e..#4R#*&rrdS..&edDS##^RdHX{d^^UrreXrD>>&H{{Se.de>S.^XHD4{>D&4D{4HDd#r&&&Sdv#Dr#e.{dH..&oD>#SXHRd^#>RH{ r.eXd#R>e^^{#eX44d^eRXHDe#XSrdXSDH&d4#.{..{#XS^{&e&tSr.XeA..S&HSR4&H{zDreX^D#r&R&^H>SH.peRHeed{.r&SHS&>Rr^erH&XD(&>SSrD#SR.4XWdr#dH.X&&DD#H>e^D{{eSd{&RS{4^>#HX4&{&rVd>.d&#DD>&Hg{>eSd..eD^OHrX>&HD{Se.de{rrSXDD^4XRe^r>DedSS.e{XHHR{r#{ee^d#{rrrX.De{.D44H>{HHSxeHXDD{#.e^&D>&HR/&#S{S.R#.Re4H{XX>>&rSdrD^&SSD4&.^4.9r#eJX.4&rer{de&h.reX^{SD^##S>&&R{HSrr&.DX#wS>..#D>4^Da,eHX&Dd>SrD#S>&^R%9#m{H.{>.r{44>&^^r&X^.S&.Serr#4R>^S{AHRAR.&Sr4{>XH}{>RDrdd#4^;SSH#Xe>#d{Ree.r#&SX4AR>DH4{PdHed&r&&XDX8#.>4R{Xee_&4rSd4SR.^e{^ReH.8drSXH^.d>R4^^.X^4ddrdR.eXd.^H{^eVY>rSHHdr.{#X^4{^H>ESr.^DX4Do#dRXXdH{d&reX^D#e&&#SD44>eXeR>rrd##&{S4S>.He4.{SeHXX.&>SDd4d>XH5DX^Xd&4SEDS^i^S&H-DRHd2{.SXRDD4XrX#D{&r41S.HXHS^#^r_##{DeSSee&&&D##rR.^deRXr.^&#SX.r#R>dd.SDHHdX4X<#S(#DR.deR.e&ddrSSd4^R.^e{^RHH4dXrHXSD>X^SH^d>Hd&RSXSD.#eXRS4^#>>HHt.rdReeH&eS{4r>SXS>ReDXe.R#XR#Y>S4HRDeH#X&D^{(D*4dRDH#D^^4d^.R&HS.F.SHH#A!rDRFed&rD>4Dr^#4,Be#S>eX&{S^#r>e^D{{eSSR&RR44^>#HX#r{SrXd&.DX{D^#>R4d>R&e{dd&rSe4X>h^>#!>De.dd&HSR4sR>^S&R{HeXd&.#dUDH&{R44R{edH.S&ND>#S#^RH4H>ee4d#.cX4De&{^rLDeXdkr>HDXeD##{e#&4>RHXz{#.{rD#&eeX&^{&H.{RrSd{D&#%ed{dr.i.reX^X&..&eD{4#>>HR{>red.D##XSD4{>SH.=#rrX4DX#_S{#r>DHX{#e{XXD&&r4DaRH#*XrIHXd#.&&DH^#.RD^S{&&SXdrr&rH#4X>X^R/,H{WD..XrD^}+>4^4{>epS^ed&dD{#SD{4{>D&^{.^4S&e#RS^.{eR.HSTD.&R>r{&RR.4{{#e^S%e4XDDS#&e^&4>>HSD>H&dDD4&De#&#{4eXDSHXdrDS&reX#&>RHr{{#e{R.4&{S4^drS4eTHr.R#rr&{Rn4HHRdqr^X#DXeR&HS{#Rre4.{4e#D&#XSS4.>eRR^4{{e4Dd#rS.4e>^R&H&>XeedRr_d<.D&>Sr#XQdr#.R^dS^4#>XSr^R8d&.>DrH&XHXX4RX^4{>&e{{.&&HSX{>S&4D{#ed{H.XX4D&#We.&r{#HeSXH.&&Dr#.Re^4{DHHdX&dSH#.Re^^&H>4e#d##S{R.r#&Sr^#>ddd.&X.De#^d{SH^rSMH4+eeSDr#{RX^u>>SXH^dd#^{DDH&re^^X.R&drr&DDX#mS>.S&R>N^H{eeHR:r&&eS>4d>&^4E^e4R^e{&XDr#.RrH#DrXdRX&.Se4^&R>dH4.>4{YD.^>^rr#^RrHX.S^>dQrD>#r.44R?dSRRHrd&rr>X.r#R>d^S.e^rUr.^&#DH#.Rd{Dr.d#.X&9F^.R4hSRd^S.eHG>#>d&D&#SS>d#R4H&dTr4X.DSRrHe{Xe08>>XrSdR.D{#.H^(>H^{D.H&dHDe&&S>#{.e&eS^4#DH#^R/4>>SSd^rt&erD44#S>4S>.S2^H}.eHR5rd&DSH#Rr^#4{^eRdH..>.rD4&ReH4r&&X.S&.Se.{4&>HXhRdHRde4edrDr#HrI#&1XH{d..{&&Sg#4Hdl(e.de.^esXDD>#&^{*>eed^.#eDX{S&{S.R4r{#&#{rrdX.DH{.DH^#.#^rBdr.Xe#R>X^^{#eXe^MHr{X&..&{Rq4D{#eHr{&SDe#^R#.e44r>^6{{r#dD.{&DS>4&>{H&tD#>X.HH{r^d{#H.Wer^^eX#.{&>HS&d>R^{rH&DD%&>SS.H4H>4HX>4e4ddrDdRSS4eRRH={Hrd{#.&XSD.#r>E#d:XrEdS&DRr4#>XH1#>{derde.XXrHXX&S{^.{>&e{rrrXHHB&HRD^{eD&X.#&XSz.H#DR{deSrH4dy4ud&D{&{ee#.>SHHS+H4dRDH&Re^#H>4eXAHrSX>DDRrHM{Xe(G>>.rrXS.{&.SD4&R{ehh&rHX##HRD^B>>HS4^{Rr.RDD4{_.44DrD9DrSX#DX#wXuSd4#>H^{<XX4DH&>SS4.#>>eH&{{HX{4H>SR^e>^H#yXDl^SdD.S&4DH4JrX#D{&r4mS.HXHS^#^H&JReSd..eH.XrS44#>n^D-&^dtSHr&.Dr4d>O^ReDXs.#&XSOrR#SS{^^Seerd^.#XRD.RRrS{^e#dX{H^{h>reXdD#&DDS&;{4r#d{D^{^.444{#HHdXeDXS.D&ee>daRXH#{{#eir.H##Sr4>{OX.>{e{X-.>{aD}4d>#HH{{rXRXrr&RRdzDHD4#r#XXD/.^#YS>4e>r&>Sd#{XKrR#de^#RRRH^{er&8>.{&DDD4^R4^{{SrTh{.^&.eX#4R{^DDD^>dvrDmSD&#>Rr^4Dr^miH.DXRre&&.>Xr{4HH2R.f>{r.#4SS#D{4erd#r&X&D{GrD}4H{DHR>SrHd>He##RD44e4d.r>XSD.eD&HRd4H{X^{DSHdXR.{RH^e{hH>BS{drdX#.e#dRH{de&_.reX^KH.H&&RX44>rH^rr&#DX#7S>.{#R>.^{<#r^Rjrd&DSH#Rr^#D{&eRd&&{RR4e>^H#42{{eRl>e^&H..4^RHH#.>^#d{r.>^S.d&r>&&e{X4.e&^S#.D#{>&dSSRHrd#4#feDS4H^>{DeDX&.#&XSy.&#SS>4r{.Hr{4r4XdSO#&RH^#eHdH.FX>DSr^&rSe4r>>d&DdXSD.#eXrSS4D>^eX,errdDDd{#Dd4>r>4r7re.d{Dw&H^&;XHS?.reH#d4.{&4S.4d>RHDD^^4d^.R&HS.dX>>&eSX4#Rr#dRd4.>eH^#H{>e{Xd.dSR^&>^H#oX>&edd>.&&eS./#Dr^d{Ded.R^8S^4#>XSH^H{ee^See&X4DR#4e>44{reRde4#Z.Dd4XR{d.R^e4de4XA^.{#eR^deRRHSTHr>R>.d#RSRd^S.HH.&#<DS#.Re.r^&>>H{dg#S1.Dd&rS{4H{XX>{Qr&XSDX&r^4{DH>MSr.HsdHD.&Heh&#{dHeDe^p{e#&RZ4>>SH.5er^&e{X#&>d4S>.He4r3#eHd4.X>SrD4^R.X#RSr4dD.S&.SH4RRrH#r&XX.S&.Se.&#R>4^&.#dR..&eS^4S>XHY{>eRd..e&^R^4R>C^>{SR#de.^&#R#^4R>^S{.Sdd^.#&X>^^.RS^.{eeSd#.&&h{&#SR>r.{^e#dX.^X>DR#.RSre{#eXdk.4XSDD#eR^ee{Xe;6>rRX.De#^>^RX{+H>lSS>XeD^##>#.H>>HSj.r.X^D##X>XHe>SH.}eSeX#DX#,>Z^X>.HrW^SSXXDa&>>S^X>eHHj#r&XoRk&SRS^e>^HH7X>4d>.S&.Se^+>#H^%Ge{dS..&eS^^&>XHd{>r3d..e&^S#D#>x^>{Se.de.e&#SX^RR>^S{.erd^.^&X>Z^rRS^D{ee^d#{r&+D>4DR.^D{^e#dX.&X>>S4{Re^r{#.{d}{eXS>.^dR^^H{XRX(>{eX.>e^dR#^4{gre*SS.XeD^4eRX^d>>H{1.r.X^R#.dR,^_>SHDLe{HX#DX^SS>^*>.HeL^r^XX>W#VSS4>>eDRY#>>XpD#HHS.4R>^Hr_Xrdd>.R&.See#>#HXfne{dS..&eR^HS>XH#{>Dxd..R&^S#^e>PH;{Se>de.H&#>X^DR>^>{.erd^DS&XSA4>RS^>{ee^d#.4&O>>4SR.^S{^SDdX{SX>>S4SRe^.{#R4d8{.XSDSr#R^^r{Xe.Q>rSX.Se4SR#^^{9.X1Sr{XeD^#eRX^X>>eq_.rrX^R#4&Rl^n>SHDQe.eX#S##eS>^g>..GE^r#XXD3#{SS4S>eH.l#r#XES>#XS.4D>^H^sX>ed>D>#.Se4D>#S.k;e>dS...&S^4H>XH4{>e>d.Ser#S#4^>6Hd{S>HdeDe#4SX4^R>r&{.eed^.#&rS64XRSHP{eeHd#SX&RD>4?R.^D{^>XdXDX&dDS4%ReSD{#eXdUD?&{D.#{R^^r{Xe)3>rSX{De#.R#^r{EeiCSD.eHD^#rRX^#>>rX%...rrD##rRV^D>SH.qe.e&DDX#eS>^D>.Hex^r#X.DN#&SS^X>eHH)#DX&R.>#dS.4D>^ee+X.X&^.S#dSee4>#HX %.0X...#sS^r{>XHE{>e>^^.e&{S#4{>q^>{Se.e>.^&rSX4rR>^>{..eXe.#&eSt4dRSH>{ereXD.X&eD>4{R.^e{^r^Xr.5&HDS.RRe^^{#e#4Sr>&^D.#DR^^#{Xe2e#rS&yDe4TR#^#{(r>XHr.X{D^#HRXH#>>e>XdreX{D#e6R94>>SeSd>r^X>DX^dS>4S>.H.4Xr#XRDK4-SS4.>eH^H.rXXH.>#HS.4.>^r#LHr X^.S&RSe^.>#e#sRe>X^..H&S^4#>XeXA&eSX4.eeSS#4X>KHk#ee.X#.^&#SX4hR>^SH/eed>.#&>S?4iRSe.!de^dR.X&&D>^YR.H.{re#dR.<^DDS#.ReHe{^eXdSr>eHD.#eR^^^&>esdDrS&XDe#^R#^X^^H>d4r.&4D^#^RXeC{^HSd#reXrD#4^RUHFOXH.d#r^#rDX#kS>^>{#Hed&r#^^Dy&>SS4S&#H^dXrXX^.>&SS.4e4SH#6Sr_XS.S&SSeH^>eHX6De>d{..#SS^^^{RHFADeS^&.e&^S#^#>>^>W.e.##.^&#SX4XX.^SMreed{.#&XSC#>4X^.O&e^X&.X&XD>^S{&^eFXe#d4.q#XDS4SR.^^PXeXHHr>XSD.4.RH^#ode+#erSX.De#eXP^XxxH>dDr.XeD^##&.^i{.HSd.reXeD#^XR#4>{rH.urr^&^DX4XRR4S{rHe^>r#XXDM&>>H4.{4H^d&rXXX.>4S>U4e{#H#y{rPH^.S#SSD4^{#HX4ee>dS..&eRH4#{jHaZ>eSdS.e4^XX4X>{^>q.e.H4.^#^SR4V>{^S&deed^.#&XRH#>>D^.Yre^d4.X4;SD#S>r^ei#e#HU.)#vR/#.>r^^4SeXd/r>&>S^#e>e^#}HeB0>rSX.S{#^>&^XqXH>I>r.#ed4##>X^G{RHSXjre&eXH#X>X4>4#H.9er^&^D{#5>d4S{{Heo^r#XXSH&>RS4.{DH^h4rX#qD^&SR.4e{#H#d^r!&gSq&.R.4^&&HXmae>X>D#&eRr4#&^HU{>eSdS{#&^Re4X{d^>{Se.dedS&#RX4Z{X^S{See&^D4&XRd#>>.^.-Se^X^.4&uRd#S{.^e{^e#X#DRX>R%#.&H^^{#eXdX>.XSS{#eRR^#{Xej;>s#X.Sr#^>r^X{XH>XS.eXeSe##R&^2yLHSdS.HX^Se#XRH4>>SH.meDdX#S##G>X4S>SHeX^.rXXS&&>R>4.#BH^d^rDX%S&&SXX4e>^H#;XrSd>D{&.RR4^>^HXXM>SdSD>&eRr4#&{HWdC.4d.D>&^SD4X>i^>{S.ddeD.&#Re45R{^Sd.rdd^De&XR&#>&.^.i.r*d#De&*S4#SR.^emeredXDHX>>H#.Re^^{#rXdiDXXSRd#eRe^#dXR{q>DdX.SS#^>.^XxX{d SDdXeSX##RX^}u(e^!.DtX^R{#XRs4>>Sr_}e.DX#S.#FS{4S8.r#m^.rXXS&&>>14.{.e.%#.rXTR#&SS.4e{ee{QX.ed>DR&.Se4^>^D>BV.HdSDe&eS^4#>X>^{>.dd.Sd&^S^4XQUHd{S.EdeDr&#R^4t{2eH{..(d^{4&XSW#>>>Ho{er{d#.e&hD>#SRSD#{^r>dX.XX>DS#.ReS>{#redfDeXSDS#e{^H&{XrH?>rRX.S.#^>^HH{ rH_SrDXeD^##RX^#>>r&K.DdX^D^#X{w^&>SrXJe.RX#s.#9>;HX>.rXM^>SXXDZ&>SSH^>ee>Q#.SXxD5&S>.D^>^eR3X.ed>8r&.R.4H>#eRape{dS..&eS^^&>Xer{>.Hd..r&^>#^H>yeH{S.Xdel#&#R#4eR>eH{.erd^.#&XRX^BRSe^{eDSd#.X&QD>4{R.ed{^.udX.XX>RS.rRee_{#rDd_D#XSSSDDR^eG{Xed->rSX.S.#rR#H{{/D#_Sr.XeD^4zRXH.>>rrz.rrX^R##{ROHe>SrX_e..X#S#4rS>He>.ee1^r#XXSX4dSSHH>eDS;#rXX<D_eeS.H^>^eHYXrjd>.SDnSeHW>#rxW:r1dSS.&rS^^{>Xee{>.0d.D.#SS#^{>wD^{Se.deDe&SSX^>R>H.{.eed^.^H>Sn^RRSH{{ee^d#.XreD>^HR.eH{^e^dXS9&rDS^^Re^H{#r#d<DT&RD.^^R^^{{Xeo3>rSXRDe^XR#e2{Jeg+SD.#XD^^dRXHS>>R#0...XSD#^dR)D^>SH.Ier^XrDX4RS>HD>.H.B^D#eYDp4SSSHH>eR&G#.#&d.>4SS.H#>^H#xXr9XH.S4eSeH^>#H&Pa.>Xd..4^S^Hd>XS>{>r>X6.e4^S#^>>9^>{SrSX..^44SXH>R>^S{.eed>.#4pS(^{RS^S{e.^H&.X#{D>^.R.H>{^r^e4.:#{DS^^Re^^{#r#d#r>#>D.HDR^^#{Xe?X^rS#rDe^eR#^&{+r>drr.#HD^^dRXH#>>e>d#re#HD#^SRs4>>SeS Rr^#^DXe&S>4S>.H.4Xr##4Dp#rSS4.>eH^H.rX&{.>4{S.4.>^r#NHrM&>.S4HSe^.>#e#d^e>&>..reS^4#>XeXEdeS&R.e4rS#4X>EHB#ee.&S.^&eSX4<R>^SH=ee&^.#4^Sq4YRSe.(.e^&4.X#RD>^vR.H.C4e#&4.q&^DS#.ReHe=ZeX&#r>&#D.#eR^^^&>e_&&rS#BDe#^R#^X4eH>XRr.#RD^#^RXe,{HHSXSreXHD#4#RqH)KXH.XSr^^^DX#*S>4Sm+HeXer##^Ds# SSH.{>H^XHrX#X.>r#S.^.{&H#XHrBH^.S&.Se4^>SHXX&e>#d..&.S^H##AHkXXeS&R.er&S#^#>4^>XXe.Hd.^&#SX4j{e^Sd>ee&S.#&&Sl^>{r^.dSe^&H.Xe>D>4>{X^edSe#H#.jX>DS4S>&^^dDeX4Sr>XSD.#e>H^#d^ef&4rSXSDe^^&&^Xd4H>&Pr.&>D^4^#4^hd4HS^SreX^D#4#R.4>d#H.4#r^X#DX#8RR4S5{HeX>r#X&Dp4>R#4.%RH^XHrX&#.>#>Rr4egRH#_Drpd>.S#SSR4^JSHXdHe>dS..&.dX4#MDH<v>eSd..e&^&.4X 4^>X4e.d..^4#RH4zy#^SdReeX..###Re#>o#^.5Xe^d#.X#XD{#S(&^e&He#dX.u&qFe#.%X^^geeXdCr>XSXX#e{S^#dSeqdNrS#.S.#^{D^X{dH>d>r.&.S###{D^piSHS=.reX^Sr#X{H4>d4H.p.r^##S4#K{^4SddHe4>r#&#D{&>{^4.#qH^a#rXXPSL&S{X4edOH#C#rW&>w.&.{d4^(SHX4Re>X>D{&e{d4#>^H8{>eSd.D{&^>R4XaD^>{Re.&eSd&#>D4hB^^S4eeeXe.R&X>D#>>)^.{ee^X^DX&<>.#Sdr^e{^e#dX.RX>>4#.0#^^{^eX&s{RXS>##e{{^#Eee3XinSX.>##^Re^X{6H>d>SDXe>&##dd^y>>HS}.rRX^R>#X{R4>>RH.XeD&X#RS#E{^4SdDHeder^XXRS&>&%4.>eH^d^.{XxRD&S{&4e>^H#XX.Sd>Rr&.{44^&#HXdXrSdSRe&e>44#>XH8d7{Sd.RH&^>&4X>5^>I>S^deR^&#>d4zR>^S{..xd^Rd&X{w#>R>^.{.RXd#R%&3D{#SR.^e{^{rdXS.X>>.#.Rr^^d#rmd+SeXS>X#edD^#{XeRG>S^X.D.#^R4^XdIrKCSS#XeR>##a>^1hYe&J.S#X^SR#XR(4>{>H>ueS&X#SR#BS>4S{-D&M^SXXXDS&>SR4.>rH^/#S1Xy.>&SS.4e>^H#3Xtrd>R^&.{^4^>4HXXF.4dSR#&eS^4#{{H7{>rSd.RX&^S^4X>X^>dSredeRd&#>S4_XD^SgSrRd^Rd&XS&#>RS^.z.eHd#R5&!{>#SR.^eLeerdXS{X>;.#.Re^^*^{XdPS>XSX3#eR^^#{Xrd->SHX.>e#^R4^X{Pe{OSr.XeDH##RX^=U4HSJ.reX.D##XRM^d{MH.ter^eDd&.R&&4{{#HeF^r#e>d{r{&:SR4S>e^RiOeHDde4S.4e>^RSH^*#e>d{H#{He44^R&HHDSe&d&.SX>Sr##>4Hd{deSxD.4&XS^#4RSHtDeHDd4.d{drH#^RD^R{S^^d+r&&rD&#>rRXRDe#&{^r4&dSOz>rH^&>4HD:>4R{{eRXSDSdrD##_>deRXH.R#eS4{4eH_>rSX.+BD.#eRX&H>&e=.XXeD^##>#H&>>HSo.r.X^D##X>XH^>SHDoerHX#DX#G>>^>>.HrL^r4XXD#&>R>4>>eHrQ#r4Xf.>&SS.HK>^H42Xr&d>.S&.Se^X>#HX+ge>dS.S&eS^^D>XHq{>eRd..r&^S#H^>a^>{SeDde.^&#SX4_R>^S{.erd^.#&XS&4&RS^.{e{^e^gDr>&X4vR.^e{^r^&S.mX{DS#DRe^^{#eXe.r>X>D.#eR^^#{XefH&rSXDDe#eR#^&{0H>& r.XeD^#4RX^9>>HSO.reX^D4#^R?4>>SHRWSr^X#DX.HX{Sr#{HDdVr#XXDJ..&DDD#S>rHe!#erdS.&SR4{>^H#mXRerXXO..K{DD4eH44&e>dS...h&.Se4X>&&eDD#rd.rH&De1#HRHH!{XeR)e.r&4D44 S{^r{^e.hr.x&#HS&{Rr^4D4H49^.^&^S^#&R>4>{HHSw.rXX#SX#BRr4R>^Hrf#.XXRDxt4Rd^d>XHr_d.&d.D4&4R#4#.RHr{DrdX#H&&{Sd4H>.&eJSr>Xe#DRp4>>SeS4&r^X#DX#XS>4S>.e./Sr#X&D}&{SS4.>er^dHrXXd.>&RS.4D>^e^dSrlXd.S&>Se4^>#HXd^e>X,..&rS^4#>XHIneeSdD.e&.S#4X>=^>%Xe.de.^&#SX4XR>^SKSeed^.#&&Sf#{RS^.dSe^d#.X&dD>#SR.^e{^e#dX.W#HDS#.Re^r{DeXd?r>H{d{DSdrR&^#>4dd.}X.De#^XXS&4R>&;{r>XeD^##dDS&4R>.CR.-X^D##XdXD{4{R{4e{Hr^X^#&R44S>.He^r3&rQd>.&X{S>>De#T#rXXj{4.d&>rS#D>H^4{4eSdzrD&^S.4HH4X{e>dS....XeSS4^ReH&{rHS>X^4{&S^4rR>^dSH4rdr.HXHS#Y#R44>S4#DR4^X{HH{d#rSXrDH#eSe.H{DHR_{redS>S#{Rd^&>S#R>d^^{#eX4&0^eRXS.r&rRe4H{Xdd.1X.De#^&DS&4R>&f{r{XeD^##X^Sr^X>e^{rD&dD##XRy.S4d>>H#{DrHX4^gXCDR4eHr_^r#XXDc&>SSe.XeHrd#rXX0.>e#&{S4#H>XHd{reX{>.r&HS.&#R&HX)Xd{.R&eS^4#XD>&&{e{X^.e&^S#.W#{>X^4{!ed)rr4&^Dr#RR.{Rred^.#&Xd&D&#.S>#^{4eeyDr^XH.{&DRS4{{&eK.&&eDS#.ReDe^r{3^&=&r>&wDd&rSr{4e#:>rSX.X^.D#SR^{&eXkSr.XeC..r#.R#{de#(.reX^{eDH#XD{^G>&HHi#XHDr#yS>4S&.>#^H1ReHXXDdS{^4>eH^m#R>e{ddrR&^.e4XR4HD{4rf.{##Se4^>#S4H#>{e>d>rR&erD4HRrBdr^d..e&^kDDH4#Sd^d{Se>f{rHXH4&>H^S{.ee4>=rr&&XSX&>S{4r{.#X.X&fD>4>{^^e{^e#X#.3X>DS4S>{^^{4eXdrr>XSD.^eRe^#{&el<{rS#XDe4e>S^X{&H>Xdr.XeD^##RS^o>{HSlRreXeD#^XR44>>RH.Orr^&.DX^9R>4S>DHe(Hr#X.D<4>XD4.>rH^W4rXX^.>&S&&4e>HH#*#rQXu.S&>{.4^>#HXd>e>dR..4eX44#>HH(BXeSXe.e#eQc4X>H^>Gqe.de.^&#RS4v>&^Spdeede.#&eir#>>d^.tee^d4.X&dD>4v9S^e{^e#XX. X{DS#>h.^^{#eXXRr>XRD.^e#X^#{HeldXrSXSDe^Sd>^X{4H>Xnr.XrD^4dRX^#XCHSM.re&.D##&RI^Xd>H.Jer^#dDX#dS>^>d#HeWDr#XDD%&>SSH.{RH^<rrXX4.>4#S.^.>RH#Zrr(X{.S&.Se4^{DHXG4e>X&..&.S^H#>eHJ)&eSd{.e#{S#HX>H^>nde.dR.^&rSX4^dr^SMdeed^.#&&Sx#{RS^.X^e^d#.X&#D>#SR.^edre#dH.B&4DS#DRe^^d^eXd&r>XSD.#eR^^.&.e_;>rS&#De#HR#^#{yeX&>r.XeD^#>RX^d>>e>&#reX^D##DRN4>>Sr.X=r^X#DX#fS>H#>.e.Xdr#X#DF44SS4.>eH^u{rXXW.>&>S.4.>^r#6Hr(d>.S&.Se4H>#e#6.e>d>..#eS^4#>XHUdDeSdR.e&^S#44>8r>kHe.dD.^&>SX4{R>rS{Deedr.##4Sk4rRSr.Xee^dH.X&&D>4&R.^e={e#dX.n&dDS#DReHeldeXdNr>&eD.#eR^H^{Dex)>rS&>De#^R#^X{^H>MSr.XrD^##RX^d>>HS2.rRX^D##XR&^^>SH.?e>Serd>.{&dS44>{d+rrDXXDP&>XXD{#D>.H&0#4&Dd&{S.4e>^>X^HUHd{.S&.Se4^>#HXO/e>dR..&eS^4#>XHW&S#SX&.e&^S#4X4H^>{Se.de.^&#SX^X{r^S{Deede.#&XS+^>>^^.{re^d4.X&&D>4>>>^e{ee#dH.VX>DS4S>>^^{HeXd#r>XSD.4.>X^#{^ezdXrSX.De#^RD^X{dH>d0r.X.D^4#X.^8>>HSUDreXHD##X{#4>>SH.Orr^X#DX#zS>4S>.He7^reXXDa&>S{D#>eH^w#{.r#XX.S&RrXd4.&H#{dr4R..d&dS.#S>H^Xx&e{:{..XrS&4=>#^&{.e>R^rr&&D{q{R.HM{RHRdSrr&#Sr#XSRH&zde4dr^da>.{#rS{^#>DeHd44R{{D;#HRd^#D&e# 4r#X{Hr#TSD44>^e&SRrrdDDd##r&#4>{e&A>eRdRH##fRH4dedd^r.XeD^D-#dSd4X>{H>l.e{XX.rR&^4>SH.weR>reX^D,d4Sd4>HD6.r#XXD_.4XRSH#RH{F#rXXZS*eHS.4e>^H^kXrxd>D>&RSe4H>#H^j/e>dSS.#MS^44>XHd{>e{d.D.4XS#44>l^{{Se.de.^#eSX4#R>^R{.eed^.#&.Sw#{RS^>{ee^d#.X#^D>#SR.^e{^e^dX.a#=DS#.Re^H{#e&d-r>4GD.#eR^^4{Xe2B>rSX.De#^R#^&{zH>6SrRX{D^##RX.#4&>{H>*.r4XR#^RA4>>SH.&Hr^X#DX#(S>4S>.re^4r#XXDA&>SS4D>eH^^rrXXy.>&>S.4r>^H#X^rLd>.S&DSe4^>#HX/;e>dS..&SS^4#>XH&#deSd..er>&eS^4q>d&^Dr#Hder4&rH>#4R4^>{xeDE^.H&&D&#>SR^H{#ee?Hr>&XH.&RRH^&D&44dXrH:{DX#HRD^SDd4{d4rePXDR&er&4{>deddWe{X.H4X&Rr4SS^ed{S4^X.DS#^^&{4HSJ.re^>XeD^#W.44d>>CDr.X#DX#p&4DR4HRR9rr>XXDK&>&eSr#rR.HHK^rXdH..&d^g>^H# X.X&d.S&.Se4.>#HX8u.FXR..&rS^4H>XH9{>.S&4.e&HS#4&>KH2{SrSXD.^&HSX4dR>^S{.eeX4.#&&Sh4dRS^.{ee^de.X&uD>#SR.^.{^e#Xe.-X>DS#DRe^H{#eX&#r>XSD.#rR^^#{Xe63>rSX.De#.R#^X{nedd^r.XeD^D}#dSd4X>{H> .e{XX.rR&R^>SH.Ee{>reX^Ds#dr^dr.HHe{4rrR>.4&4S>4m>D^^cHr&d&.>XRSH4#>e^H{>rXR.rR&HS&d&SH^>{re.dr.{&#S#4#R{^R{Derd#.DXHDR4rrR4d{ee&d#.&&rD>qDD#^{>.#&{S4{d4DS#4>Q4R{eeHl&rS>Dr&&DR44D{H#dERe{X4DeuHDD^X>De^!&r>XR.r#Xr&#X>4evhreDX^.D#XR^dRRdH#w&e>X.Da#dS&4r.r^WS.XrDe#XRp4>4&RDH4{DXHDr#ES>4S&X>SH.f#^rd4DXR#4.>eH^d^.4Xa.>&SSD4e>^H#d#.Sd>.R&.SD4^>#HXX(.XdS.D&eSH4#>^HId r.d..D&^S^4X><^>{SrSde.H&#S44VR>^S{.r#d^.#&XSc#>R>^.{erXd#.X&8D{#SRD^e{^.edX.6X>DR#.Re^^{#eXdhr>XSD>#eR^^#{4eH_>rSX._UD.#eRX&H>&e2rR^DD^##RXSe^X{CH.ED^u>&Hd#XD{^&.e^{{{red.D4&*Rd4RRRHe{Hrdd>DX&dSe4S.#^HCdeRRRr#derR&4D.#eD{^#deD&u{SD#RSe&&DRerQD.d&#e&XeRSHHR&e{ddeS{He)4#>^HMeRdS.^&#SXDH&{Rr4{eDXF.#&XS D.#DSD4S{reed#rrXSD&>X^e{^e#X#D&X>DS#.RS^^{#eXXXDrXSDD#eRr^#{Xe=X>DXX.Dr#^R4^X{dH>d>D4XeDr##R#^N>>HSh..eX^D4#XR&4>>SH._e.RX#DX#<S>4S>SHeN^.^XXDA&>SR4.>rH^K#D^XM.>&SSD4e>^H#6Xr6d>.S&.SS4^>#HXQ&redS..&e&XS&#&R#HdTceSdd.#XD44>H^>{Se.^Md..e&XrH#&>0{ReSd^.#&XXH.{#rS{{DRHd#.X&2X^Sx#>Re^rD>#dS{.:dRSdJ^SR4R{^Hed&e>X{DD&DR^44>{HSdge{X^D.lXS44{>D&D>erHX4.^d^S44>RzHS{re{J.e>{{Dd4eRDHD{>erX#^{#CSd4t>D&4{SeHdd.X&{er44RH^ROP#{{X.>&rSeh^RRH^{4eDD#&.Se4^{^e4=Te>dS.D&eS^4#{#HS{>eRd..D&^S#4X7-H4{SeDde.H&#S#4 {6e#{.eDd^.e&XS:#>RSeX{eeHd#.4&7D>#SR.He{^e#dX.oX>D>#.ReHe{#eXdwr{XSDD#eR^ee{XePp>rRX.De#^R#^X{hH>!Sr.XeD^##R&^:>>HSK.DSX^D##XRd4>>SH.1er^X#DX#BRX4S>.HeYrr>XXD,&>&eSr#rR.HHy^rXdH..&d4D>.H#nXrEe4!R.HXR4rX^HX2Ve>e#d>.S&^SHdSr{XR{>HDd{^#XDDD4#R^Hd>SeRdrrr&#D&#RR.^>>Re#de^JX&DR#rrr^H>eHrd4rDXHSzVr.r4.{dHDi>.4dRDS&Rr4^d>&Hr!S4D{D.S#&SR^y{H^{6>e{DD#RR#^X{gS^e_L>re{R.r#^^e>>HS ...&rD##XRP4{>SH.Ye.e&rDX#dS>4>>.Hef^D#&^D?&{SS4D>eH.}#.#X#.>&{S.4D>^H#/XrpX&.S&DSe4r>#HXcxe>&4..&eS^4#>XHX{>eSX^.e&^S#4&>1^{{Se.&S.^&#SX4dR>^S{.eed^.#&XSE#{RS^.{eerdS.X&cD>.0#rS{4R{ZHH{4HHSW#.Re^^{#Ddd2r>XSD.#eR^^#dXR{G>rSX.De#^R4^X{8>&QSr.XeDe##R&^1>>.f=.reX^D4#XRg4>>SH.Wer^X#D^#JS>4S>RD.c^r#XXdeDX#1S.4DDz&&SdrXc{D&&RDD4eRRHXw#rdR..eXRS.d&>#^d;4#D{{.^X{S.#H>XHd>Re^R4erXHS##rR>H*DH^dd#..XDS&#HS>^^>R#&dHr4&XDH#SR>X4De##RH^4{4#{>#^e{^e#H>x{e{XJDR#SRe4R{WHH.d&uD.#eR^SD4&>RH&r{&dDe#^
+-- [[ This script is not coded, you can learn it if you want ]]
+-- [[ @YTB_NoobMemeRoblox ]]
+-- [[ Last Update 17/2/2025 ]]
+_Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
+
+local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
+
+local Window = Hawk:Window({
+	ScriptName = "NoobLoTret Hub v1.5",
+	DestroyIfExists = true,
+	Theme = "Dark" 
+})
+
+Window:Close({
+	visibility = true,
+	Callback = function()
+		Window:Destroy()
+	end,
+})
+
+Window:Minimize({
+	visibility = true,
+	OpenButton = true,
+	Callback = function()
+	end,
+})
+
+local tab1 = Window:Tab("Main")
+
+local newsec = tab1:Section("Section")
+
+newsec:UpdateSection("Thank For Use :D")
+
+local label = newsec:Label("Have Fun :D","You Can Use Now :D")
+
+label:UpdateLabel("Info Script","NoobLoTret Hub Create 03/2/2025")
+
+local button = newsec:Button("Invisible Gui","People Cant See You",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Invisible-script-20557"))()
+end)
+
+local button = newsec:Button("NetLess","Will Make Your Hats Not Fall When Use Fe",function()
+for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+game:GetService("RunService").Heartbeat:connect(function()
+v.Velocity = Vector3.new(-30,0,0)
+end)
+end
+end
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Notification";
+    Text = "Netless Ran";
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 16;
+end)
+
+local button = newsec:Button("PShade Ultimate(Shader)","Will Make Your Game Better Graphic(No Lag)",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/randomstring0/pshade-ultimate/refs/heads/main/src/cd.lua'))()
+end)
+
+local button = newsec:Button("Cctv Camera","Camera Gui",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/CCTV%20Camera'))()
+end)
+
+local button = newsec:Button("Fly Gui(v3)","You Can Fly",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+local button = newsec:Button("Owl Hub Esp","You Can See Everyone",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+local button = newsec:Button("Drop Gui","You Can Drop Tool",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NoobDepTraiVL/Slasher/refs/heads/main/Drop item"))()
+end)
+
+local button = newsec:Button("Speed And Jumppower","You Can Edit Your WalkSpeed And Jumppower",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shugare/Speed/main/S", true))()
+end)
+
+local tab2 = Window:Tab("Misc")
+
+local newsec = tab2:Section("Section")
+
+newsec:UpdateSection("Misc Tab")
+
+local label = newsec:Label("Misc","A Sub Tab Of The Main Tab")
+
+label:UpdateLabel("Misc","A Sub Tab Of The Main Tab")
+
+local button = newsec:Button("Rejoin","WARNING: When Activated, The Script Will Rejoin You!",function()
+local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+
+
+ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p)
+end)
+
+local button = newsec:Button("Shiftlock(v2)","Shiftlock On Mobile",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Unknownproooolucky/Unknown-Hub-X-Universal-Games/main/Universal/Permanent-Shiftlock-V2'))()
+end)
+
+local tab3 = Window:Tab("Keyboard")
+
+local newsec = tab3:Section("Section")
+
+newsec:UpdateSection("Keyboard")
+
+local label = newsec:Label("Keyboard","There Will Be An On-Screen Keyboard For Mobile")
+
+label:UpdateLabel("Keyborad","There Will Be An On-Screen Keyboard For Mobile")
+
+local button = newsec:Button("Keyboard(Delta)","Better Than Normal KB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt"))()
+end)
+
+local button = newsec:Button(" Normal Keyboard","Normal KB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+local tab4 = Window:Tab("Fe Script")
+
+local newsec = tab4:Section("Section")
+
+newsec:UpdateSection("Fe Script")
+
+local label = newsec:Label("Fe Script","This Script Work All Game But Have Some Games Not Work")
+
+label:UpdateLabel("Fe Script","This Script Work All Game But Have Some Games Not Work")
+
+local button = newsec:Button("Fe Walk On Wall","You Can Walk On Wall",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/artas01/artas01/main/walkonwall_imnotscriptdeveloper"))()
+end)
+
+local button = newsec:Button("Fe Telekinesis(v5)","You Can Control Block",function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty11.lua"))()
+end)
+
+local tab5 = Window:Tab("Admin")
+
+local newsec = tab5:Section("Section")
+
+newsec:UpdateSection("Admin Tab")
+
+local label = newsec:Label("Admin Tab","Warning Admin Script Is Not Real Admin Only Cmds And Function!")
+
+label:UpdateLabel("Admin Tab","Only Cmds And Function!")
+
+local button = newsec:Button("Admin Hub","Have Some Admin Cmds",function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/obeskit/Adminware/main/Adminware")()
+end)
+
+local button = newsec:Button("Nameless Admin(v2.2)","Nameless Admin Is Good",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/refs/heads/main/Source.lua", true))()
+end)
+
+local button = newsec:Button("Proton Admin","Proton Admin",function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5e6e6cc1bb32fd926764d064e2c60a3b.lua"))()
+end)
+
+local tab6 = Window:Tab("Game")
+
+local newsec = tab6:Section("Section")
+
+newsec:UpdateSection("Script Some Game")
+
+local label = newsec:Label("Script Game","You Can Use The Game Scripts")
+
+label:UpdateLabel("Script Game","You Can Use The Game Scripts")
+
+local button = newsec:Button("Build To Survive","Free Gamepass(OP)",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/BaconBossScript/Crazy/main/Crazy'),true))()
+end)
+
+local button = newsec:Button("Build And Battle","Free Epic Katana,...",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/NUKE!-Build-and-Battle!-linhmc-hub-18647"))()
+end)
+
+local tab7 = Window:Tab("Setting")
+
+local newsec = tab7:Section("Section")
+
+newsec:UpdateSection("Setting For Hub")
+
+local label = newsec:Label("Setting For Hub","You Can Edit The Hub Same Your Setting")
+
+label:UpdateLabel("Setting For Hub","You Can Edit The Hub Same Your Setting")
+
+newsec:ColorPicker("Color Picker Title",Color3.fromRGB(39, 39, 39),function(xd)
+	print(xd)
+end)
+
+newsec:Line()
+
+newsec:KeyBind("Example Key Bind","Q",function()
+	Hawk:ToggleUI()
+end)
+
+local Notifications = Hawk:AddNotifications()
+
+Notifications:Notification("Thank For Use","Have Fun With Script","Let's Go!",5)
