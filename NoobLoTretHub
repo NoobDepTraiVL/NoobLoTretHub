@@ -1,3 +1,6 @@
+-- [[ Key: NoobIsBest ]]
+-- [[ This script is not coded so you can learn it if you want ]]
+-- [[ Last Update: 17/2/2025 ]]
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
@@ -102,9 +105,6 @@ CheckKey.MouseButton1Click:Connect(function()
         ScreenGui:Destroy()
 
 -- Script
--- [[ This script is not coded, you can learn it if you want ]]
--- [[ @YTB_NoobMemeRoblox ]]
--- [[ Last Update 17/2/2025 ]]
 _Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
 
 local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
