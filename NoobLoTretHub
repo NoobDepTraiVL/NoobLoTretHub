@@ -6,7 +6,7 @@ _Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
 local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
 
 local Window = Hawk:Window({
-	ScriptName = "NoobLoTret Hub v1.5",
+	ScriptName = "NoobLoTret Hub v1.6",
 	DestroyIfExists = true,
 	Theme = "Dark" 
 })
