@@ -171,10 +171,6 @@ local button = newsec:Button("Fly Gui(v3)","You Can Fly",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 end)
 
-local button = newsec:Button("Fly Gui Custom(v3)","You Can Fly",function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ScpGuest666/Custom-stuff/3e9e33bfe12cc1ae5c87e8c764dfd2adccf511c9/Fly%20script'))()
-end)
-
 local button = newsec:Button("Owl Hub Esp","You Can See Everyone",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 end)
