@@ -103,9 +103,27 @@ local button = newsec:Button("Shiftlock(v2)","Shiftlock On Mobile",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Unknownproooolucky/Unknown-Hub-X-Universal-Games/main/Universal/Permanent-Shiftlock-V2'))()
 end)
 
-local tab3 = Window:Tab("Keyboard")
+local tab3 = Window:Tab("Player")
 
 local newsec = tab3:Section("Section")
+
+newsec:UpdateSection("Player")
+
+local label = newsec:Label("Player","hi")
+
+label:UpdateLabel("Player","Change Player")
+
+local slider = newsec:Slider("Speed",16,250,function(value)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+
+local slider = newsec:Slider("Jumppower",50,300,function(value)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end)
+
+local tab4 = Window:Tab("Keyboard")
+
+local newsec = tab4:Section("Section")
 
 newsec:UpdateSection("Keyboard")
 
@@ -121,9 +139,9 @@ local button = newsec:Button(" Normal Keyboard","Normal KB",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
 
-local tab4 = Window:Tab("Fe Script")
+local tab5 = Window:Tab("Fe Script")
 
-local newsec = tab4:Section("Section")
+local newsec = tab5:Section("Section")
 
 newsec:UpdateSection("Fe Script")
 
@@ -139,9 +157,9 @@ local button = newsec:Button("Fe Telekinesis(v5)","You Can Control Block",functi
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty11.lua"))()
 end)
 
-local tab5 = Window:Tab("Admin")
+local tab6 = Window:Tab("Admin")
 
-local newsec = tab5:Section("Section")
+local newsec = tab6:Section("Section")
 
 newsec:UpdateSection("Admin Tab")
 
@@ -161,9 +179,9 @@ local button = newsec:Button("Proton Admin","Proton Admin",function()
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5e6e6cc1bb32fd926764d064e2c60a3b.lua"))()
 end)
 
-local tab6 = Window:Tab("Game")
+local tab7 = Window:Tab("Game")
 
-local newsec = tab6:Section("Section")
+local newsec = tab7:Section("Section")
 
 newsec:UpdateSection("Script Some Game")
 
@@ -179,9 +197,9 @@ local button = newsec:Button("Build And Battle","Free Epic Katana,...",function(
 loadstring(game:HttpGet("https://rawscripts.net/raw/NUKE!-Build-and-Battle!-linhmc-hub-18647"))()
 end)
 
-local tab7 = Window:Tab("Setting")
+local tab8 = Window:Tab("Setting")
 
-local newsec = tab7:Section("Section")
+local newsec = tab8:Section("Section")
 
 newsec:UpdateSection("Setting For Hub")
 
