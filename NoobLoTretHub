@@ -202,3 +202,6 @@ end)
 local Notifications = Hawk:AddNotifications()
 
 Notifications:Notification("Thank For Use","Have Fun With Script","Let's Go!",5)
+
+Notifications:Notify("Error Shiftlock!","Shiftlock Not Working!","Error",function()
+end)
