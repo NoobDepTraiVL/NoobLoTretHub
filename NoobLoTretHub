@@ -1,11 +1,11 @@
 -- [[ This script is not coded so you can learn it if you want ]]
--- [[ Last Update: 17/2/2025 ]]
+-- [[ Last Update: 18/2/2025 ]]
 _Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
 
 local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
 
 local Window = Hawk:Window({
-	ScriptName = "NoobLoTret Hub v1.6",
+	ScriptName = "NoobLoTret Hub v1.7.2",
 	DestroyIfExists = true,
 	Theme = "Dark" 
 })
@@ -118,6 +118,10 @@ end)
 
 local slider = newsec:Slider("Jumppower",50,300,function(value)
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end)
+
+local slider = newsec:Slider("Gravity",0,1000,function(value)
+game.Workspace.Gravity = value
 end)
 
 local tab4 = Window:Tab("Keyboard")
