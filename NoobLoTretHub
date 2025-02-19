@@ -327,6 +327,11 @@ local function OMQRQRC_fake_script() -- ShiftlockStarterGui.LocalScript
 end
 coroutine.wrap(OMQRQRC_fake_script)()
 end)
+
+local button = newsec:Button("Position Finder)","Find x,y,z Coordinates",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Position-Finder/main/loader"))()
+end)
+
 local tab3 = Window:Tab("Player")
 
 local newsec = tab3:Section("Section")
