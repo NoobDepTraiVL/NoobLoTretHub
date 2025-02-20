@@ -5,7 +5,7 @@ _Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
 local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
 
 local Window = Hawk:Window({
-	ScriptName = "NoobLoTret Hub v1.7.21",
+	ScriptName = "NoobLoTret Hub v1.7.3",
 	DestroyIfExists = true,
 	Theme = "Dark" 
 })
@@ -388,6 +388,10 @@ end)
 
 local button = newsec:Button("Fe Telekinesis(v5)","You Can Control Block",function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty11.lua"))()
+end)
+
+local button = newsec:Button("Fe Punch Fling","You Need To Tap The Screen To Punch",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
 end)
 
 local tab6 = Window:Tab("Admin")
