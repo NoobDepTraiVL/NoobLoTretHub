@@ -1,5 +1,15 @@
+-- [[ Hawk Ui Lib Roblox]]
 -- [[ This script is not coded so you can learn it if you want ]]
 -- [[ Last Update: 18/2/2025 ]]
+-- [[ tab1: line 27-88 ]]
+-- [[ tab2: line 90-342 ]]
+-- [[ tab3: line 344-364 ]]
+-- [[ tab4: line 366-382 ]]
+-- [[ tab5: line 384-404 ]]
+-- [[ tab6: line 406-426 ]]
+-- [[ tab7: line 428-444 ]]
+-- [[ tab8: line 446-464 ]]
+
 _Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
 
 local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
