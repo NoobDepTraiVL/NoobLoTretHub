@@ -1,21 +1,13 @@
 -- [[ Hawk Ui Lib Roblox]]
 -- [[ This script is not coded so you can learn it if you want ]]
 -- [[ Last Update: 18/2/2025 ]]
--- [[ tab1: line 27-88 ]]
--- [[ tab2: line 90-342 ]]
--- [[ tab3: line 344-364 ]]
--- [[ tab4: line 366-382 ]]
--- [[ tab5: line 384-404 ]]
--- [[ tab6: line 406-426 ]]
--- [[ tab7: line 428-444 ]]
--- [[ tab8: line 446-464 ]]
 
 _Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
 
 local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
 
 local Window = Hawk:Window({
-	ScriptName = "NoobLoTret Hub v1.7.3",
+	ScriptName = "NoobLoTret Hub v1.8",
 	DestroyIfExists = true,
 	Theme = "Dark" 
 })
@@ -42,7 +34,7 @@ newsec:UpdateSection("Thank For Use :D")
 
 local label = newsec:Label("Have Fun :D","You Can Use Now :D")
 
-label:UpdateLabel("Info Script","NoobLoTret Hub Create 03/2/2025")
+label:UpdateLabel("Main Tab","Hub Main Tab")
 
 local button = newsec:Button("Invisible Gui","People Cant See You",function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Invisible-script-20557"))()
@@ -463,6 +455,26 @@ newsec:Line()
 newsec:KeyBind("Example Key Bind","Q",function()
 	Hawk:ToggleUI()
 end)
+
+local tab9 = Window:Tab("Setting")
+
+local newsec = tab9:Section("Section")
+
+newsec:UpdateSection("Setting For Hub")
+
+local label = newsec:Label("Setting For Hub","You Can Edit The Hub Same Your Setting")
+
+label:UpdateLabel("Version: 1.0","The Moment NoobLoTret Hub Was Created")
+
+local tab10 = Window:Tab("Setting")
+
+local newsec = tab10:Section("Section")
+
+newsec:UpdateSection("Setting For Hub")
+
+local label = newsec:Label("Setting For Hub","You Can Edit The Hub Same Your Setting")
+
+label:UpdateLabel("Credit: @YTB_NoobMemeRoblox","Youtube")
 
 local Notifications = Hawk:AddNotifications()
 
