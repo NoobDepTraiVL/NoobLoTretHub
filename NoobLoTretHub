@@ -412,6 +412,14 @@ local button = newsec:Button("Sit","Make You Sit",function()
 game.Players.LocalPlayer.Character.Humanoid.Sit = true
 end)
 
+local button = newsec:Button("Remove Accessory","Remove Your Accessory",function()
+for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Accessory") then
+        v:Destroy()
+    end
+end
+end)
+
 local tab4 = Window:Tab("Keyboard")
 
 local newsec = tab4:Section("Section")
