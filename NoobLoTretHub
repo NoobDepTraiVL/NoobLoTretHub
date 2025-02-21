@@ -356,6 +356,52 @@ local slider = newsec:Slider("Gravity",0,1000,function(value)
 game.Workspace.Gravity = value
 end)
 
+newsec:Line()
+
+newsec:Paragraph("Toggle Speed",{"Speed","Warning: Do Not On All!"})
+
+-- Speed 50
+
+local toggleee = newsec:Toggle("Speed 50",function(value)
+	if value == true then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+	elseif value == false then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end
+end)
+
+-- Speed 75
+
+local toggleee = newsec:Toggle("Speed 75",function(value)
+	if value == true then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 75
+	elseif value == false then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end
+end)
+
+-- Speed 100
+
+local toggleee = newsec:Toggle("Speed 100",function(value)
+	if value == true then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+	elseif value == false then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end
+end)
+
+newsec:Line()
+
+newsec:Paragraph("Jumppower",{"Warning: Do Not On All!"})
+
+local toggleee = newsec:Toggle("Jumppower 100",function(value)
+	if value == true then
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+	elseif value == false then
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+	end
+end)
+
 local tab4 = Window:Tab("Keyboard")
 
 local newsec = tab4:Section("Section")
