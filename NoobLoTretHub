@@ -1,6 +1,6 @@
 -- [[ Hawk Ui Lib Roblox]]
 -- [[ This script is not coded so you can learn it if you want ]]
--- [[ Last Update: 18/2/2025 ]]
+-- [[ Last Update: 21/2/2025 ]]
 
 _Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
 
@@ -479,3 +479,6 @@ label:UpdateLabel("Credit: @YTB_NoobMemeRoblox","Youtube")
 local Notifications = Hawk:AddNotifications()
 
 Notifications:Notification("Thank For Use","Have Fun With Script","Let's Go!",5)
+
+Notifications:Notify("Hub is currently being updated","Please wait, Hub will be updated soon","Notify",function()
+end)
