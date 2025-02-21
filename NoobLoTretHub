@@ -532,7 +532,7 @@ newsec:Paragraph("Version 1.7.21",{"[+] Fix Text"})
 
 newsec:Paragraph("Version 1.7.22",{"[+] Add Tab","[+] Add Slider","[+] More Features","[+] Trolling"})
 
-newsec:Paragraph("Version 1.8",{"[+] Add More Tabs"})
+newsec:Paragraph("Version 1.8",{"[+] Add More Tabs","[+] Add More Buttons"})
 
 local tab10 = Window:Tab("Credit")
 
