@@ -358,48 +358,58 @@ end)
 
 newsec:Line()
 
-newsec:Paragraph("Toggle Speed",{"Speed","Warning: Do Not On All!"})
+newsec:Paragraph("Button Player WalkSpeed",{"Speed","Change Speed"})
 
--- Speed 50
-
-local toggleee = newsec:Toggle("Speed 50",function(value)
-	if value == true then
-                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
-	elseif value == false then
-                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-	end
+local button = newsec:Button("Normal Speed(16)","Change Your Speed To '16'",function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
 
--- Speed 75
-
-local toggleee = newsec:Toggle("Speed 75",function(value)
-	if value == true then
-                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 75
-	elseif value == false then
-                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-	end
+local button = newsec:Button("Speed(50)","Change Your Speed To '50'",function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
 end)
 
--- Speed 100
+local button = newsec:Button("Speed(75)","Change Your Speed To '75'",function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 75
+end)
 
-local toggleee = newsec:Toggle("Speed 100",function(value)
-	if value == true then
-                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
-	elseif value == false then
-                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-	end
+local button = newsec:Button("Speed(100)","Change Your Speed To '100'",function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
 end)
 
 newsec:Line()
 
-newsec:Paragraph("Jumppower",{"Warning: Do Not On All!"})
+newsec:Paragraph("Button Change JumpPower",{"Change Your Jumppower"})
 
-local toggleee = newsec:Toggle("Jumppower 100",function(value)
-	if value == true then
-                game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
-	elseif value == false then
-                game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-	end
+local button = newsec:Button("Normal JumpPower(50)","Change Your JumpPower To '50'",function()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+local button = newsec:Button("JumpPower(100)","Change Your JumpPower To '100'",function()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+end)
+
+local button = newsec:Button("JumpPower(150)","Change Your JumpPower To '150'",function()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
+end)
+
+local button = newsec:Button("JumpPower(200)","Change Your JumpPower To '200'",function()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
+end)
+
+local button = newsec:Button("JumpPower(300)","Change Your JumpPower To '300'",function()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 300
+end)
+
+newsec:Line()
+
+newsec:Paragraph("Special",{"Special"})
+
+local button = newsec:Button("Reset","Kill Yourself",function()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
+local button = newsec:Button("Sit","Make You Sit",function()
+game.Players.LocalPlayer.Character.Humanoid.Sit = true
 end)
 
 local tab4 = Window:Tab("Keyboard")
