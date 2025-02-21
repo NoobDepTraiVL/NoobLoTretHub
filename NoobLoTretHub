@@ -362,7 +362,7 @@ newsec:Paragraph("Toggle Speed",{"Speed","Warning: Do Not On All!"})
 
 -- Speed 50
 
-local toggleee = newsec:Toggle("Speed 50",function(value)
+local toggleee = newsec:Toggle("Speed 50",function(16)
 	if value == true then
                 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
 	elseif value == false then
