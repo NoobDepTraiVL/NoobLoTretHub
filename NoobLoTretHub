@@ -364,9 +364,9 @@ newsec:Paragraph("Toggle Speed",{"Speed","Warning: Do Not On All!"})
 
 local toggleee = newsec:Toggle("Speed 50",function(value)
 	if value == true then
-                hum.WalkSpeed = 50
+                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
 	elseif value == false then
-                hum.WalkSpeed = 16
+                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 	end
 end)
 
@@ -374,9 +374,9 @@ end)
 
 local toggleee = newsec:Toggle("Speed 75",function(value)
 	if value == true then
-                hum.WalkSpeed = 75
+                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 75
 	elseif value == false then
-                hum.WalkSpeed = 16
+                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 	end
 end)
 
@@ -384,9 +384,9 @@ end)
 
 local toggleee = newsec:Toggle("Speed 100",function(value)
 	if value == true then
-                hum.WalkSpeed = 100
+                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
 	elseif value == false then
-                hum.WalkSpeed = 16
+                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 	end
 end)
 
@@ -396,9 +396,9 @@ newsec:Paragraph("Jumppower",{"Warning: Do Not On All!"})
 
 local toggleee = newsec:Toggle("Jumppower 100",function(value)
 	if value == true then
-                hum.JumpPower = 100
+                game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
 	elseif value == false then
-                hum.JumpPower = 16
+                game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 	end
 end)
 
