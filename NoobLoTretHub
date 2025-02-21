@@ -466,7 +466,17 @@ local label = newsec:Label("See?","uh")
 
 label:UpdateLabel("Version: 1.0","The Moment NoobLoTret Hub Was Created")
 
-newsec:Paragraph("Paragraph Title",{"Hawk HUB on top","This is a text","Hello again","Mechanism"})
+newsec:Paragraph("Version 1.5",{"[+] Add More Tabs","[+] Add More Buttons","[+] More Features","[+] Fix Bugs"})
+
+newsec:Paragraph("Version 1.6",{"[+] Add More Tabs","[+] Add More Buttons","[+] More Features"})
+
+newsec:Paragraph("Version 1.7",{"[+] Add More Tabs","[+] Add More Buttons","[+] More Features","[+] Trolling"})
+
+newsec:Paragraph("Version 1.7.21",{"[+] Fix Text"})
+
+newsec:Paragraph("Version 1.7.22",{"[+] Add Tab","[+] Add Slider","[+] More Features","[+] Trolling"})
+
+newsec:Paragraph("Version 1.8",{"[+] Add More Tabs"})
 
 local tab10 = Window:Tab("Credit")
 
