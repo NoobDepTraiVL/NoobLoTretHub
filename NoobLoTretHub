@@ -422,7 +422,7 @@ end)
 
 newsec:TextBox("Chat","Write Something...",function(value)
 local args = {
-    [1] = "value",
+    [1] = value,
     [2] = "All"
 }
 
