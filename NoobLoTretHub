@@ -420,6 +420,15 @@ for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 end
 end)
 
+newsec:TextBox("Chat","Write Something...",function(value)
+local args = {
+    [1] = "value",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+
 local tab4 = Window:Tab("Keyboard")
 
 local newsec = tab4:Section("Section")
