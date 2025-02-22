@@ -535,7 +535,7 @@ local newsec = tab9:Section("Section")
 
 newsec:UpdateSection("Anti...")
 
-local label = newsec:Label("See?","uh")
+local label = newsec:Label("See?...","uh")
 
 label:UpdateLabel("Anti Tab","Anti :v")
 
@@ -549,7 +549,7 @@ local newsec = tab10:Section("Section")
 
 newsec:UpdateSection("Bypass")
 
-local label = newsec:Label("See?","uh")
+local label = newsec:Label("Ayo",">:O")
 
 label:UpdateLabel("Bypass","Bypass :v")
 
@@ -583,8 +583,6 @@ local label = newsec:Label("See?","uh")
 
 label:UpdateLabel("Version: 1.0","The Moment NoobLoTret Hub Was Created")
 
-newsec:Line()
-
 newsec:Paragraph("Version 1.5",{"[+] Add More Tabs","[+] Add More Buttons","[+] More Features","[+] Fix Bugs"})
 
 newsec:Line()
@@ -609,7 +607,7 @@ newsec:Paragraph("Version 1.8",{"[+] Add More Tabs","[+] Add More Buttons","[+] 
 
 newsec:Line()
 
-newsec:Paragraph("Version 1.9",{"[+] Add Tab","[+] Add Textbox","Add More Features Player Tab","[+] More Features"})
+newsec:Paragraph("Version 1.9",{"[+] Add Tab","[+] Add Textbox","[+] Add More Features Player Tab","[+] More Features"})
 
 local tab12 = Window:Tab("Credit")
 
