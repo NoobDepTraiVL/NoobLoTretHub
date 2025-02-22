@@ -529,9 +529,9 @@ newsec:KeyBind("Example Key Bind","Q",function()
 	Hawk:ToggleUI()
 end)
 
-local tab8 = Window:Tab("Anti")
+local tab9 = Window:Tab("Anti")
 
-local newsec = tab8:Section("Section")
+local newsec = tab9:Section("Section")
 
 newsec:UpdateSection("Anti...")
 
@@ -573,8 +573,6 @@ local button = newsec:Button("Bypass Fps(Unlock Fps) 240","It's Just Unlimited N
 setfpscap(240)
 end)
 
-newsec:Line()
-
 local tab11 = Window:Tab("Update")
 
 local newsec = tab11:Section("Section")
@@ -612,6 +610,7 @@ newsec:Paragraph("Version 1.8",{"[+] Add More Tabs","[+] Add More Buttons","[+] 
 newsec:Line()
 
 newsec:Paragraph("Version 1.9",{"[+] Add Tab","[+] Add Textbox","Add More Features Player Tab"[+] More Features"})
+
 local tab12 = Window:Tab("Credit")
 
 local newsec = tab12:Section("Section")
