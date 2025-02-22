@@ -609,7 +609,7 @@ newsec:Paragraph("Version 1.8",{"[+] Add More Tabs","[+] Add More Buttons","[+] 
 
 newsec:Line()
 
-newsec:Paragraph("Version 1.9",{"[+] Add Tab","[+] Add Textbox","Add More Features Player Tab"[+] More Features"})
+newsec:Paragraph("Version 1.9",{"[+] Add Tab","[+] Add Textbox","Add More Features Player Tab","[+] More Features"})
 
 local tab12 = Window:Tab("Credit")
 
