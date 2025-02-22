@@ -553,15 +553,15 @@ local label = newsec:Label("Ayo",">:O")
 
 label:UpdateLabel("Bypass","Bypass :v")
 
-local button = newsec:Button("Bypass Fps(Unlock Fps) '10'[Don't Use]","Can Surpass 60 fps Limit Or Limit You To A Certain fps",function()
+local button = newsec:Button("Bypass Fps(Unlock Fps) 10[Don't Use]","Can Surpass 60 fps Limit Or Limit You To A Certain fps",function()
 setfpscap(10)
 end)
 
-local button = newsec:Button("Bypass Fps(Unlock Fps) '30'[Don't Use]","Can Surpass 60 fps Limit Or Limit You To A Certain fps",function()
+local button = newsec:Button("Bypass Fps(Unlock Fps) 30[Don't Use]","Can Surpass 60 fps Limit Or Limit You To A Certain fps",function()
 setfpscap(30)
 end)
 
-local button = newsec:Button("Bypass Fps(Unlock Fps) '60'","Default",function()
+local button = newsec:Button("Bypass Fps(Unlock Fps) 60","Default",function()
 setfpscap(60)
 end)
 
