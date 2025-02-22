@@ -1,13 +1,13 @@
 -- [[ Hawk Ui Lib Roblox]]
 -- [[ This script is not coded so you can learn it if you want ]]
--- [[ Last Update: 21/2/2025 ]]
+-- [[ Last Update: 22/2/2025 ]]
 
 _Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
 
 local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
 
 local Window = Hawk:Window({
-	ScriptName = "NoobLoTret Hub v1.8",
+	ScriptName = "NoobLoTret Hub v1.9",
 	DestroyIfExists = true,
 	Theme = "Dark" 
 })
@@ -529,9 +529,55 @@ newsec:KeyBind("Example Key Bind","Q",function()
 	Hawk:ToggleUI()
 end)
 
-local tab9 = Window:Tab("Update")
+local tab8 = Window:Tab("Anti")
 
-local newsec = tab9:Section("Section")
+local newsec = tab8:Section("Section")
+
+newsec:UpdateSection("Anti...")
+
+local label = newsec:Label("See?","uh")
+
+label:UpdateLabel("Anti Tab","Anti :v")
+
+local button = newsec:Button("Anti Afk","No Limit At 20 Minutes",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/brosula123/Anti-afk/main/Bl%C3%B8xzScript"))() 
+end)
+
+local tab10 = Window:Tab("Bypass")
+
+local newsec = tab10:Section("Section")
+
+newsec:UpdateSection("Bypass")
+
+local label = newsec:Label("See?","uh")
+
+label:UpdateLabel("Bypass","Bypass :v")
+
+local button = newsec:Button("Bypass Fps(Unlock Fps) '10'[Don't Use]","Can Surpass 60 fps Limit Or Limit You To A Certain fps",function()
+setfpscap(10)
+end)
+
+local button = newsec:Button("Bypass Fps(Unlock Fps) '30'[Don't Use]","Can Surpass 60 fps Limit Or Limit You To A Certain fps",function()
+setfpscap(30)
+end)
+
+local button = newsec:Button("Bypass Fps(Unlock Fps) '60'","Default",function()
+setfpscap(60)
+end)
+
+local button = newsec:Button("Bypass Fps(Unlock Fps) 120","It Only Unlocks To Pass 60 fps Not Adjusts fps To 120",function()
+setfpscap(120)
+end)
+
+local button = newsec:Button("Bypass Fps(Unlock Fps) 240","It's Just Unlimited Not Adjusted...",function()
+setfpscap(240)
+end)
+
+newsec:Line()
+
+local tab11 = Window:Tab("Update")
+
+local newsec = tab11:Section("Section")
 
 newsec:UpdateSection("Hub Update")
 
@@ -539,21 +585,36 @@ local label = newsec:Label("See?","uh")
 
 label:UpdateLabel("Version: 1.0","The Moment NoobLoTret Hub Was Created")
 
+newsec:Line()
+
 newsec:Paragraph("Version 1.5",{"[+] Add More Tabs","[+] Add More Buttons","[+] More Features","[+] Fix Bugs"})
+
+newsec:Line()
 
 newsec:Paragraph("Version 1.6",{"[+] Add More Tabs","[+] Add More Buttons","[+] More Features"})
 
+newsec:Line()
+
 newsec:Paragraph("Version 1.7",{"[+] Add More Tabs","[+] Add More Buttons","[+] More Features","[+] Trolling"})
 
-newsec:Paragraph("Version 1.7.21",{"[+] Fix Text"})
+newsec:Line()
 
-newsec:Paragraph("Version 1.7.22",{"[+] Add Tab","[+] Add Slider","[+] More Features","[+] Trolling"})
+newsec:Paragraph("Version 1.7.21",{"[+] Add Tab","[+] Add Slider","[+] More Features","[+] Trolling"})
 
-newsec:Paragraph("Version 1.8",{"[+] Add More Tabs","[+] Add More Buttons"})
+newsec:Line()
 
-local tab10 = Window:Tab("Credit")
+newsec:Paragraph("Version 1.7.22",{"[+] Fix Text"})
 
-local newsec = tab10:Section("Section")
+newsec:Line()
+
+newsec:Paragraph("Version 1.8",{"[+] Add More Tabs","[+] Add More Buttons","[+] Add So Many Features Player Tab"})
+
+newsec:Line()
+
+newsec:Paragraph("Version 1.9",{"[+] Add Tab","[+] Add Textbox","Add More Features Player Tab"[+] More Features"})
+local tab12 = Window:Tab("Credit")
+
+local newsec = tab12:Section("Section")
 
 newsec:UpdateSection("Credit Hub")
 
