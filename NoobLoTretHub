@@ -543,6 +543,10 @@ local button = newsec:Button("Anti Afk","No Limit At 20 Minutes",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/brosula123/Anti-afk/main/Bl%C3%B8xzScript"))() 
 end)
 
+local button = newsec:Button("Anti Fling","You Can't Fling",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Linux6699/DaHubRevival/main/AntiFling.lua'))()
+end)
+
 local tab10 = Window:Tab("Bypass")
 
 local newsec = tab10:Section("Section")
