@@ -600,6 +600,10 @@ _G.Settings = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
 end)
 
+local button = newsec:Button("Anti Fall","You Can't Fall To Void",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/AntiFall/main/Script"))()
+end)
+
 local tab10 = Window:Tab("Bypass")
 
 local newsec = tab10:Section("Section")
