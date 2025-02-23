@@ -811,6 +811,57 @@ task.spawn(function()
 end)
 end)
 
+local button = newsec:Button("Anti Teleport","Anti Tele(10 studs)",function()
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local rootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Lưu vị trí ban đầu
+local lastPosition = rootPart.Position
+
+task.spawn(function()
+    while true do
+        -- Nếu vị trí thay đổi quá đột ngột, đưa về vị trí cũ
+        if (rootPart.Position - lastPosition).magnitude > 10 then
+            rootPart.Position = lastPosition -- Đưa nhân vật về vị trí cũ
+        else
+            lastPosition = rootPart.Position -- Cập nhật vị trí mới nếu hợp lệ
+        end
+
+        wait(0.2) -- Kiểm tra mỗi 0.2 giây
+    end
+end)
+end)
+
+local button = newsec:Button("Anti Gravity","Anti Gravity",function()
+task.spawn(function()
+    while true do
+        -- Giữ Gravity mặc định (196.2 là trọng lực chuẩn trong Roblox)
+        if game.Workspace.Gravity ~= 196.2 then
+            game.Workspace.Gravity = 196.2
+        end
+        
+        wait(0.2) -- Kiểm tra mỗi 0.2 giây
+    end
+end)
+end)
+
+local button = newsec:Button("Anti Sit","Anti Sit",function()
+task.spawn(function()
+    while true do
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+        if humanoid and humanoid.Sit then
+            humanoid.Sit = false -- Tự động đứng dậy
+        end
+
+        wait(0.1) -- Kiểm tra mỗi 0.1 giây
+    end
+end)
+end)
+
 local tab10 = Window:Tab("Bypass")
 
 local newsec = tab10:Section("Section")
