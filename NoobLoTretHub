@@ -744,6 +744,29 @@ task.spawn(function()
 end)
 end)
 
+local button = newsec:Button("Anti Fling","No Fling",function()
+task.spawn(function()
+    while true do
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local rootPart = character:FindFirstChild("HumanoidRootPart")
+
+        if rootPart then
+            -- Ngăn bị đẩy bay xa
+            rootPart.Velocity = Vector3.new(0, rootPart.Velocity.Y, 0)
+            rootPart.RotVelocity = Vector3.new(0, 0, 0)
+
+            -- Giới hạn vị trí để tránh bị dịch chuyển bất thường
+            if math.abs(rootPart.Position.X) > 5000 or math.abs(rootPart.Position.Z) > 5000 then
+                rootPart.Position = Vector3.new(0, rootPart.Position.Y, 0) -- Đưa nhân vật về trung tâm
+            end
+        end
+
+        wait(0.1) -- Kiểm tra mỗi 0.1 giây
+    end
+end)
+end)
+
 local tab10 = Window:Tab("Bypass")
 
 local newsec = tab10:Section("Section")
