@@ -862,6 +862,30 @@ task.spawn(function()
 end)
 end)
 
+local button = newsec:Button("Anti Float","Anti Float",function()
+task.spawn(function()
+    while true do
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local rootPart = character:FindFirstChild("HumanoidRootPart")
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+        if rootPart and humanoid then
+            -- Kiểm tra nếu nhân vật đang lơ lửng (không chạm đất)
+            local ray = Ray.new(rootPart.Position, Vector3.new(0, -5, 0))
+            local hit = workspace:FindPartOnRay(ray, character)
+
+            if not hit then
+                -- Nếu không có vật nào dưới chân, đặt nhân vật xuống mặt đất
+                rootPart.Velocity = Vector3.new(0, -50, 0) -- Ép rơi xuống
+            end
+        end
+
+        wait(0.2) -- Kiểm tra mỗi 0.2 giây
+    end
+end)
+end)
+
 local tab10 = Window:Tab("Bypass")
 
 local newsec = tab10:Section("Section")
