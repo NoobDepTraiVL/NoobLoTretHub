@@ -80,8 +80,8 @@ local button = newsec:Button("Speed And Jumppower","You Can Edit Your WalkSpeed 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Shugare/Speed/main/S", true))()
 end)
 
-local button = newsec:Button("Chat Draw","Draw On Chat",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/balditeacher/obfuscated-mobile-supportloadstring/main/obfuscated"))()
+local button = newsec:Button("Chat Draw(Improved)","Draw On Chat(Improved)",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-Chat-Draw-Mobile-Supported-18040"))()
 end)
 
 local tab2 = Window:Tab("Misc")
