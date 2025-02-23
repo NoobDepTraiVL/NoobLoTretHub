@@ -543,6 +543,207 @@ local button = newsec:Button("Anti Afk","No Limit At 20 Minutes",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/brosula123/Anti-afk/main/Bl%C3%B8xzScript"))() 
 end)
 
+local button = newsec:Button("Anti Slow","Speed Will Not Be Slow",function()
+local mt = getrawmetatable(game)
+local old = mt.__newindex
+local oldnc = mt.__namecall
+setreadonly(mt, false)
+
+mt.__newindex = newcclosure(function(self, key, value)
+    if tostring(self) == "Humanoid" then
+        if key == "WalkSpeed" and value < 16 then
+            return old(self, key, 16) -- Ngăn bị giảm tốc độ
+        end
+        if key == "JumpPower" and value < 50 then
+            return old(self, key, 50) -- Ngăn bị giảm độ nhảy
+        end
+        if key == "HipHeight" and value < 2 then
+            return old(self, key, 2) -- Ngăn bị hạ thấp nhân vật
+        end
+    end
+    return old(self, key, value)
+end)
+
+mt.__namecall = newcclosure(function(self, ...)
+    local args = {...}
+    local method = getnamecallmethod()
+
+    if method == "FireServer" then
+        local remoteName = tostring(self)
+        if remoteName:lower():find("slow") or remoteName:lower():find("debuff") then
+            return nil -- Chặn lệnh slow từ server
+        end
+    end
+
+    return oldnc(self, unpack(args))
+end)
+
+setreadonly(mt, true)
+
+task.spawn(function()
+    while true do
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+        if humanoid then
+            if humanoid.WalkSpeed < 16 then
+                humanoid.WalkSpeed = 16 -- Reset tốc độ nếu bị làm chậm
+            end
+            if humanoid.JumpPower < 50 then
+                humanoid.JumpPower = 50 -- Reset nhảy nếu bị giảm
+            end
+            if humanoid.HipHeight < 2 then
+                humanoid.HipHeight = 2 -- Ngăn bị hạ thấp
+            end
+        end
+        wait(0.5) -- Kiểm tra mỗi 0.5 giây
+    end
+end)
+end)
+
+local button = newsec:Button("Anti Stun/Knockback","No Stun/Knockback",function()
+local mt = getrawmetatable(game)
+local old = mt.__newindex
+local oldnc = mt.__namecall
+setreadonly(mt, false)
+
+mt.__newindex = newcclosure(function(self, key, value)
+    if tostring(self) == "Humanoid" then
+        if key == "PlatformStand" and value == true then
+            return old(self, key, false)
+        end
+        if key == "Sit" and value == true then
+            return old(self, key, false)
+        end
+        if key == "WalkSpeed" and value < 16 then
+            return old(self, key, 16)
+        end
+    end
+    return old(self, key, value)
+end)
+
+mt.__namecall = newcclosure(function(self, ...)
+    local args = {...}
+    local method = getnamecallmethod()
+
+    if method == "FireServer" then
+        local remoteName = tostring(self)
+        if remoteName:lower():find("stun") or remoteName:lower():find("knockback") then
+            return nil -- Chặn lệnh stun/knockback từ server
+        end
+    end
+
+    return oldnc(self, unpack(args))
+end)
+
+setreadonly(mt, true)
+
+task.spawn(function()
+    while true do
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+        local rootPart = character:FindFirstChild("HumanoidRootPart")
+
+        if humanoid then
+            if humanoid.PlatformStand then
+                humanoid.PlatformStand = false
+            end
+            if humanoid.Sit then
+                humanoid.Sit = false
+            end
+        end
+
+        if rootPart then
+            rootPart.Velocity = Vector3.new(0, rootPart.Velocity.Y, 0) -- Ngăn knockback
+        end
+
+        wait(0.5)
+    end
+end)
+end)
+
+local button = newsec:Button("Anti Ragdoll","No Ragdoll",function()
+local mt = getrawmetatable(game)
+local old = mt.__newindex
+local oldnc = mt.__namecall
+setreadonly(mt, false)
+
+mt.__newindex = newcclosure(function(self, key, value)
+    if tostring(self) == "Humanoid" then
+        if key == "PlatformStand" and value == true then
+            return old(self, key, false) -- Chặn bị ngã
+        end
+        if key == "State" and value == Enum.HumanoidStateType.Physics then
+            return old(self, key, Enum.HumanoidStateType.Running) -- Chặn Ragdoll Physics
+        end
+    end
+    return old(self, key, value)
+end)
+
+mt.__namecall = newcclosure(function(self, ...)
+    local args = {...}
+    local method = getnamecallmethod()
+
+    if method == "FireServer" then
+        local remoteName = tostring(self)
+        if remoteName:lower():find("ragdoll") or remoteName:lower():find("physics") then
+            return nil -- Chặn lệnh ragdoll từ server
+        end
+    end
+
+    return oldnc(self, unpack(args))
+end)
+
+setreadonly(mt, true)
+
+-- Xóa tất cả Constraint gây Ragdoll
+task.spawn(function()
+    while true do
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+        if humanoid then
+            if humanoid.PlatformStand then
+                humanoid.PlatformStand = false -- Ngăn bị ngã
+            end
+            if humanoid:GetState() == Enum.HumanoidStateType.Physics then
+                humanoid:ChangeState(Enum.HumanoidStateType.Running) -- Reset trạng thái
+            end
+        end
+
+        for _, part in pairs(character:GetChildren()) do
+            if part:IsA("BallSocketConstraint") or part:IsA("HingeConstraint") or part:IsA("RopeConstraint") then
+                part:Destroy() -- Xóa các Constraint gây Ragdoll
+            end
+        end
+
+        wait(0.5) -- Kiểm tra mỗi 0.5 giây
+    end
+end)
+end)
+
+local button = newsec:Button("Anti Rope","No Rope",function()
+task.spawn(function()
+    while true do
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+
+        if character then
+            for _, part in pairs(character:GetChildren()) do
+                if part:IsA("RopeConstraint") or part:IsA("HingeConstraint") or part:IsA("BallSocketConstraint") then
+                    part:Destroy() -- Xóa tất cả dây trói
+                end
+            end
+        end
+
+        wait(0.5) -- Kiểm tra mỗi 0.5 giây
+    end
+end)
+end)
+
 local tab10 = Window:Tab("Bypass")
 
 local newsec = tab10:Section("Section")
