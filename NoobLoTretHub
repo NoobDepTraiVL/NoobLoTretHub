@@ -2,6 +2,14 @@
 -- [[ This script is not coded so you can learn it if you want ]]
 -- [[ Last Update: 22/2/2025 ]]
 
+print("
+███╗░░██╗░█████╗░████████╗██╗░░██╗██╗███╗░░██╗░██████╗░
+████╗░██║██╔══██╗╚══██╔══╝██║░░██║██║████╗░██║██╔════╝░
+██╔██╗██║██║░░██║░░░██║░░░███████║██║██╔██╗██║██║░░██╗░
+██║╚████║██║░░██║░░░██║░░░██╔══██║██║██║╚████║██║░░╚██╗
+██║░╚███║╚█████╔╝░░░██║░░░██║░░██║██║██║░╚███║╚██████╔╝
+╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝░╚═════╝░")
+
 _Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
 
 local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
