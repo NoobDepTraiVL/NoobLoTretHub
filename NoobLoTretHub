@@ -487,7 +487,7 @@ local button = newsec:Button("Admin Hub","Have Some Admin Cmds",function()
 loadstring(game:HttpGet"https://raw.githubusercontent.com/obeskit/Adminware/main/Adminware")()
 end)
 
-local button = newsec:Button("Nameless Admin(v2.2)","Nameless Admin Is Good",function()
+local button = newsec:Button("Nameless Admin(New Verison)","Nameless Admin Is Good",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/refs/heads/main/Source.lua", true))()
 end)
 
