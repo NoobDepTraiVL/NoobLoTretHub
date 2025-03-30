@@ -642,7 +642,7 @@ local button = newsec:Button("Bypass Fps(Unlock Fps) 240","It's Just Unlimited N
 setfpscap(240)
 end)
 
-local button = newsec:Button("I*!&@nN)@/.F","M+@+a#/^°tH.H€}°uG+/eE",function()
+local button = newsec:Button("Bypass Fps(Unlock Fps) Inf","Unlimited Bypass Fps",function()
 setfpscap(math.huge)
 end)
 
