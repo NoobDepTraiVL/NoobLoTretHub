@@ -20,13 +20,13 @@ end
 local Confirmed = false
 
 WindUI:Popup({
-    Title = "Welcome!",
+    Title = "Cmds",
     Icon = "info",
     Content = "Commands " .. gradient("NoobDepTrai Hub", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Lib",
     Buttons = {
         {
             Title = "Cancel",
-            --Icon = "close",
+            Icon = "close",
             Callback = function() end,
             Variant = "Tertiary",
         },
@@ -47,7 +47,7 @@ local Window = WindUI:CreateWindow({
     Icon = "door-open",
     Author = "Credit: @Lo_Tret_Meme",
     Folder = "CloudHub",
-    Size = UDim2.fromOffset(580, 460),
+    Size = UDim2.fromOffset(340, 220),
     Transparent = true,
     Theme = "Dark",
     UserEnabled = false,
@@ -70,24 +70,17 @@ Window:EditOpenButton({
 
 local Tabs = {
     Items = Window:Tab({ Title = "Items", Icon = "sword", Desc = "Get Items" }),
+    Player = Window:Tab({ Title = "Player", Icon = "eye", Desc = "Edit Player" }),
+    Teleport = Window:Tab({ Title = "Teleport", Icon = "sparkle", Desc = "Teleport To Everywhere" }),
 }
 
 Window:SelectTab(1)
 
 
-Tabs.ParagraphTab:Paragraph({
-    Title = "Default",
-    Desc = "Normal Paragraph",
-    Image = "bird",
-    --Color = "Red"
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
+Tabs.Items:Paragraph({
+    Title = ":epickatana(:ek)",
+    Desc = "Get Epic Katana",
+    Image = "sword",
 })
 Tabs.ParagraphTab:Paragraph({
     Title = "Danger (Error)",
