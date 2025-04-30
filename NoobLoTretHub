@@ -44,7 +44,7 @@ repeat wait() until Confirmed
 
 local Window = WindUI:CreateWindow({
     Title = "Cmd-Build And Battle(NoobDepTrai Hub)",
-    Icon = "door-open",
+    Icon = "house",
     Author = "Credit: @Lo_Tret_Meme",
     Folder = "CloudHub",
     Size = UDim2.fromOffset(340, 220),
@@ -69,32 +69,23 @@ Window:EditOpenButton({
 
 
 local Tabs = {
-    Items = Window:Tab({ Title = "Items", Icon = "sword", Desc = "Get Items" }),
+    Items = Window:Tab({ Title = "Items", Icon = "swords", Desc = "Get Items" }),
     Player = Window:Tab({ Title = "Player", Icon = "eye", Desc = "Edit Player" }),
-    Teleport = Window:Tab({ Title = "Teleport", Icon = "sparkle", Desc = "Teleport To Everywhere" }),
+    Teleport = Window:Tab({ Title = "Teleport", Icon = "sparkles", Desc = "Teleport To Everywhere" }),
 }
 
 Window:SelectTab(1)
 
 
 Tabs.Items:Paragraph({
-    Title = ":epickatana(:ek)",
-    Desc = "Get Epic Katana",
+    Title = ":vipsword(vs)",
+    Desc = "Get Vip Sword",
     Image = "sword",
 })
-Tabs.ParagraphTab:Paragraph({
-    Title = "Danger (Error)",
-    Desc = "Red Paragraph",
-    Image = "triangle-alert",
-    Color = "Red",
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
+Tabs.Items:Paragraph({
+    Title = ":medkit5(mk5)",
+    Desc = "Get Medkit(5 uses)",
+    Image = "plus",
 })
 Tabs.ParagraphTab:Paragraph({
     Title = "Warning",
