@@ -22,7 +22,7 @@ local Confirmed = false
 WindUI:Popup({
     Title = "Cmds",
     Icon = "info",
-    Content = "Commands " .. gradient("NoobDepTrai Hub", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Lib",
+    Content = "Commands " .. gradient("NoobDepTrai Hub", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Script",
     Buttons = {
         {
             Title = "Cancel",
@@ -60,7 +60,7 @@ Window:EditOpenButton({
     Icon = "monitor",
     CornerRadius = UDim.new(0,16),
     StrokeThickness = 2,
-    Color = ColorSequence.new( -- gradient
+    Color = ColorSequence.new(
         Color3.fromHex("FF0F7B"), 
         Color3.fromHex("F89B29")
     ),
