@@ -74,6 +74,7 @@ local Tabs = {
     Teleport = Window:Tab({ Title = "Teleport", Icon = "sparkles", Desc = "Teleport To Everywhere" }),
 }
 
+b = Window:Divider(),
 Window:SelectTab(1)
 
 
