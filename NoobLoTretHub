@@ -1,700 +1,175 @@
--- [[ Hawk Ui Lib Roblox]]
--- [[ This script is not coded so you can learn it if you want ]]
--- [[ Last Update: 22/2/2025 ]]
-
-_Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
-
-local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
-
-local Window = Hawk:Window({
-	ScriptName = "NoobLoTret Hub v1.9",
-	DestroyIfExists = true,
-	Theme = "Dark" 
-})
-
-Window:Close({
-	visibility = true,
-	Callback = function()
-		Window:Destroy()
-	end,
-})
-
-Window:Minimize({
-	visibility = true,
-	OpenButton = true,
-	Callback = function()
-	end,
-})
-
-local tab1 = Window:Tab("Main")
-
-local newsec = tab1:Section("Section")
-
-newsec:UpdateSection("Thank For Use :D")
-
-local label = newsec:Label("Have Fun :D","You Can Use Now :D")
-
-label:UpdateLabel("Main Tab","Hub Main Tab")
-
-local button = newsec:Button("Invisible Gui","People Cant See You",function()
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Invisible-script-20557"))()
-end)
-
-local button = newsec:Button("NetLess","Will Make Your Hats Not Fall When Use Fe",function()
-for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
-if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
-game:GetService("RunService").Heartbeat:connect(function()
-v.Velocity = Vector3.new(-30,0,0)
-end)
-end
-end
-
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-    Title = "Notification";
-    Text = "Netless Ran";
-    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 16;
-end)
-
-local button = newsec:Button("PShade Ultimate(Shader)","Will Make Your Game Better Graphic(No Lag)",function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/randomstring0/pshade-ultimate/refs/heads/main/src/cd.lua'))()
-end)
-
-local button = newsec:Button("Cctv Camera","Camera Gui",function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/CCTV%20Camera'))()
-end)
-
-local button = newsec:Button("Fly Gui(v3)","You Can Fly",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
-end)
-
-local button = newsec:Button("Owl Hub Esp","You Can See Everyone",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
-end)
-
-local button = newsec:Button("Drop Gui","You Can Drop Tool",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NoobDepTraiVL/Slasher/refs/heads/main/Drop item"))()
-end)
-
-local button = newsec:Button("Speed And Jumppower","You Can Edit Your WalkSpeed And Jumppower",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Shugare/Speed/main/S", true))()
-end)
-
-local button = newsec:Button("Chat Draw(Improved)","Draw On Chat(Improved)",function()
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-Chat-Draw-Mobile-Supported-18040"))()
-end)
-
-local tab2 = Window:Tab("Misc")
-
-local newsec = tab2:Section("Section")
-
-newsec:UpdateSection("Misc Tab")
-
-local label = newsec:Label("Misc","A Sub Tab Of The Main Tab")
-
-label:UpdateLabel("Misc","A Sub Tab Of The Main Tab")
-
-local button = newsec:Button("Rejoin","WARNING: When Activated, The Script Will Rejoin You!",function()
-local ts = game:GetService("TeleportService")
-
-local p = game:GetService("Players").LocalPlayer
-
-
-
-ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p)
-end)
-
-local button = newsec:Button("Shiftlock","Shiftlock On Mobile",function()
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-local ShiftlockStarterGui = Instance.new("ScreenGui")
-local ImageButton = Instance.new("ImageButton")
-
---Properties:
-
-ShiftlockStarterGui.Name = "Shiftlock (StarterGui)"
-ShiftlockStarterGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ShiftlockStarterGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-ImageButton.Parent = ShiftlockStarterGui
-ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton.BackgroundTransparency = 1.000
-ImageButton.Position = UDim2.new(0.921914339, 0, 0.552375436, 0)
-ImageButton.Size = UDim2.new(0.0636147112, 0, 0.0661305636, 0)
-ImageButton.SizeConstraint = Enum.SizeConstraint.RelativeXX
-ImageButton.Image = "http://www.roblox.com/asset/?id=182223762"
-
--- Scripts:
-
-local function TLQOYN_fake_script() -- ImageButton.ShiftGUI 
-	local script = Instance.new('LocalScript', ImageButton)
-
-	local MobileCameraFramework = {}
-	local players = game:GetService("Players")
-	local runservice = game:GetService("RunService")
-	local CAS = game:GetService("ContextActionService")
-	local player = players.LocalPlayer
-	local character = player.Character or player.CharacterAdded:Wait()
-	local root = character:WaitForChild("HumanoidRootPart")
-	local humanoid = character.Humanoid
-	local camera = workspace.CurrentCamera
-	local button = script.Parent
-	
-	--Visiblity
-	uis = game:GetService("UserInputService")
-	ismobile = uis.TouchEnabled
-	button.Visible = ismobile
-	
-	local states = {
-		OFF = "rbxasset://textures/ui/mouseLock_off@2x.png",
-		ON = "rbxasset://textures/ui/mouseLock_on@2x.png"
-	}
-	local MAX_LENGTH = 900000
-	local active = false
-	local ENABLED_OFFSET = CFrame.new(1.7, 0, 0)
-	local DISABLED_OFFSET = CFrame.new(-1.7, 0, 0)
-	local function UpdateImage(STATE)
-		button.Image = states[STATE]
-	end
-	local function UpdateAutoRotate(BOOL)
-		humanoid.AutoRotate = BOOL
-	end
-	local function GetUpdatedCameraCFrame(ROOT, CAMERA)
-		return CFrame.new(root.Position, Vector3.new(CAMERA.CFrame.LookVector.X * MAX_LENGTH, root.Position.Y, CAMERA.CFrame.LookVector.Z * MAX_LENGTH))
-	end
-	local function EnableShiftlock()
-		UpdateAutoRotate(false)
-		UpdateImage("ON")
-		root.CFrame = GetUpdatedCameraCFrame(root, camera)
-		camera.CFrame = camera.CFrame * ENABLED_OFFSET
-	end
-	local function DisableShiftlock()
-		UpdateAutoRotate(true)
-		UpdateImage("OFF")
-		camera.CFrame = camera.CFrame * DISABLED_OFFSET
-		pcall(function()
-			active:Disconnect()
-			active = nil
-		end)
-	end
-	UpdateImage("OFF")
-	active = false
-	function ShiftLock()
-		if not active then
-			active = runservice.RenderStepped:Connect(function()
-				EnableShiftlock()
-			end)
-		else
-			DisableShiftlock()
-		end
-	end
-	local ShiftLockButton = CAS:BindAction("ShiftLOCK", ShiftLock, false, "On")
-	CAS:SetPosition("ShiftLOCK", UDim2.new(0.8, 0, 0.8, 0))
-	button.MouseButton1Click:Connect(function()
-		if not active then
-			active = runservice.RenderStepped:Connect(function()
-				EnableShiftlock()
-			end)
-		else
-			DisableShiftlock()
-		end
-	end)
-	return MobileCameraFramework
-	
-end
-coroutine.wrap(TLQOYN_fake_script)()
-local function OMQRQRC_fake_script() -- ShiftlockStarterGui.LocalScript 
-	local script = Instance.new('LocalScript', ShiftlockStarterGui)
-
-	local Players = game:GetService("Players")
-	local UserInputService = game:GetService("UserInputService")
-	local Settings = UserSettings()
-	local GameSettings = Settings.GameSettings
-	local ShiftLockController = {}
-	while not Players.LocalPlayer do
-		wait()
-	end
-	local LocalPlayer = Players.LocalPlayer
-	local Mouse = LocalPlayer:GetMouse()
-	local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
-	local ScreenGui, ShiftLockIcon, InputCn
-	local IsShiftLockMode = true
-	local IsShiftLocked = true
-	local IsActionBound = false
-	local IsInFirstPerson = false
-	ShiftLockController.OnShiftLockToggled = Instance.new("BindableEvent")
-	local function isShiftLockMode()
-		return LocalPlayer.DevEnableMouseLock and GameSettings.ControlMode == Enum.ControlMode.MouseLockSwitch and LocalPlayer.DevComputerMovementMode ~= Enum.DevComputerMovementMode.ClickToMove and GameSettings.ComputerMovementMode ~= Enum.ComputerMovementMode.ClickToMove and LocalPlayer.DevComputerMovementMode ~= Enum.DevComputerMovementMode.Scriptable
-	end
-	if not UserInputService.TouchEnabled then
-		IsShiftLockMode = isShiftLockMode()
-	end
-	local function onShiftLockToggled()
-		IsShiftLocked = not IsShiftLocked
-		ShiftLockController.OnShiftLockToggled:Fire()
-	end
-	local initialize = function()
-		print("enabled")
-	end
-	function ShiftLockController:IsShiftLocked()
-		return IsShiftLockMode and IsShiftLocked
-	end
-	function ShiftLockController:SetIsInFirstPerson(isInFirstPerson)
-		IsInFirstPerson = isInFirstPerson
-	end
-	local function mouseLockSwitchFunc(actionName, inputState, inputObject)
-		if IsShiftLockMode then
-			onShiftLockToggled()
-		end
-	end
-	local function disableShiftLock()
-		if ScreenGui then
-			ScreenGui.Parent = nil
-		end
-		IsShiftLockMode = false
-		Mouse.Icon = ""
-		if InputCn then
-			InputCn:disconnect()
-			InputCn = nil
-		end
-		IsActionBound = false
-		ShiftLockController.OnShiftLockToggled:Fire()
-	end
-	local onShiftInputBegan = function(inputObject, isProcessed)
-		if isProcessed then
-			return
-		end
-		if inputObject.UserInputType ~= Enum.UserInputType.Keyboard or inputObject.KeyCode == Enum.KeyCode.LeftShift or inputObject.KeyCode == Enum.KeyCode.RightShift then
-		end
-	end
-	local function enableShiftLock()
-		IsShiftLockMode = isShiftLockMode()
-		if IsShiftLockMode then
-			if ScreenGui then
-				ScreenGui.Parent = PlayerGui
-			end
-			if IsShiftLocked then
-				ShiftLockController.OnShiftLockToggled:Fire()
-			end
-			if not IsActionBound then
-				InputCn = UserInputService.InputBegan:connect(onShiftInputBegan)
-				IsActionBound = true
-			end
-		end
-	end
-	GameSettings.Changed:connect(function(property)
-		if property == "ControlMode" then
-			if GameSettings.ControlMode == Enum.ControlMode.MouseLockSwitch then
-				enableShiftLock()
-			else
-				disableShiftLock()
-			end
-		elseif property == "ComputerMovementMode" then
-			if GameSettings.ComputerMovementMode == Enum.ComputerMovementMode.ClickToMove then
-				disableShiftLock()
-			else
-				enableShiftLock()
-			end
-		end
-	end)
-	LocalPlayer.Changed:connect(function(property)
-		if property == "DevEnableMouseLock" then
-			if LocalPlayer.DevEnableMouseLock then
-				enableShiftLock()
-			else
-				disableShiftLock()
-			end
-		elseif property == "DevComputerMovementMode" then
-			if LocalPlayer.DevComputerMovementMode == Enum.DevComputerMovementMode.ClickToMove or LocalPlayer.DevComputerMovementMode == Enum.DevComputerMovementMode.Scriptable then
-				disableShiftLock()
-			else
-				enableShiftLock()
-			end
-		end
-	end)
-	LocalPlayer.CharacterAdded:connect(function(character)
-		if not UserInputService.TouchEnabled then
-			initialize()
-		end
-	end)
-	if not UserInputService.TouchEnabled then
-		initialize()
-		if isShiftLockMode() then
-			InputCn = UserInputService.InputBegan:connect(onShiftInputBegan)
-			IsActionBound = true
-		end
-	end
-	enableShiftLock()
-	return ShiftLockController
-	
-end
-coroutine.wrap(OMQRQRC_fake_script)()
-end)
-
-local button = newsec:Button("Position Finder","Find x,y,z Coordinates",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Position-Finder/main/loader"))()
-end)
-
-local tab3 = Window:Tab("Player")
-
-local newsec = tab3:Section("Section")
-
-newsec:UpdateSection("Player")
-
-local label = newsec:Label("Player","hi")
-
-label:UpdateLabel("Player","Change Player")
-
-local slider = newsec:Slider("Speed",16,250,function(value)
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
-end)
-
-local slider = newsec:Slider("Jumppower",50,300,function(value)
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
-end)
-
-local slider = newsec:Slider("Gravity",0,1000,function(value)
-game.Workspace.Gravity = value
-end)
-
-newsec:Line()
-
-newsec:Paragraph("Button Player WalkSpeed",{"Speed","Change Speed"})
-
-local button = newsec:Button("Normal Speed(16)","Change Your Speed To '16'",function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-end)
-
-local button = newsec:Button("Speed(50)","Change Your Speed To '50'",function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
-end)
-
-local button = newsec:Button("Speed(75)","Change Your Speed To '75'",function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 75
-end)
-
-local button = newsec:Button("Speed(100)","Change Your Speed To '100'",function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
-end)
-
-newsec:Line()
-
-newsec:Paragraph("Button Change JumpPower",{"Change Your Jumppower"})
-
-local button = newsec:Button("Normal JumpPower(50)","Change Your JumpPower To '50'",function()
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-end)
-
-local button = newsec:Button("JumpPower(100)","Change Your JumpPower To '100'",function()
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
-end)
-
-local button = newsec:Button("JumpPower(150)","Change Your JumpPower To '150'",function()
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
-end)
-
-local button = newsec:Button("JumpPower(200)","Change Your JumpPower To '200'",function()
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
-end)
-
-local button = newsec:Button("JumpPower(300)","Change Your JumpPower To '300'",function()
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 300
-end)
-
-newsec:Line()
-
-newsec:Paragraph("Special",{"Special"})
-
-local button = newsec:Button("Reset","Kill Yourself",function()
-game.Players.LocalPlayer.Character.Humanoid.Health = 0
-end)
-
-local button = newsec:Button("Sit","Make You Sit",function()
-game.Players.LocalPlayer.Character.Humanoid.Sit = true
-end)
-
-local button = newsec:Button("Remove Accessory","Remove Your Accessory",function()
-for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-    if v:IsA("Accessory") then
-        v:Destroy()
+local WindUI = loadstring(game:HttpGet("https://tree-hub.vercel.app/api/UI/WindUI"))()
+
+function gradient(text, startColor, endColor)
+    local result = ""
+    local length = #text
+
+    for i = 1, length do
+        local t = (i - 1) / math.max(length - 1, 1)
+        local r = math.floor((startColor.R + (endColor.R - startColor.R) * t) * 255)
+        local g = math.floor((startColor.G + (endColor.G - startColor.G) * t) * 255)
+        local b = math.floor((startColor.B + (endColor.B - startColor.B) * t) * 255)
+
+        local char = text:sub(i, i)
+        result = result .. "<font color=\"rgb(" .. r ..", " .. g .. ", " .. b .. ")\">" .. char .. "</font>"
     end
+
+    return result
 end
-end)
 
-newsec:TextBox("Chat","Write Something...",function(value)
-local args = {
-    [1] = value,
-    [2] = "All"
-}
+local Confirmed = false
 
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-end)
-
-local tab4 = Window:Tab("Keyboard")
-
-local newsec = tab4:Section("Section")
-
-newsec:UpdateSection("Keyboard")
-
-local label = newsec:Label("Keyboard","There Will Be An On-Screen Keyboard For Mobile")
-
-label:UpdateLabel("Keyborad","There Will Be An On-Screen Keyboard For Mobile")
-
-local button = newsec:Button("Keyboard(Delta)","Better Than Normal KB",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt"))()
-end)
-
-local button = newsec:Button(" Normal Keyboard","Normal KB",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-end)
-
-local tab5 = Window:Tab("Fe Script")
-
-local newsec = tab5:Section("Section")
-
-newsec:UpdateSection("Fe Script")
-
-local label = newsec:Label("Fe Script","This Script Work All Game But Have Some Games Not Work")
-
-label:UpdateLabel("Fe Script","This Script Work All Game But Have Some Games Not Work")
-
-local button = newsec:Button("Fe Walk On Wall","You Can Walk On Wall",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/artas01/artas01/main/walkonwall_imnotscriptdeveloper"))()
-end)
-
-local button = newsec:Button("Fe Telekinesis(v5)","You Can Control Block",function()
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty11.lua"))()
-end)
-
-local button = newsec:Button("Fe Punch Fling","You Need To Tap The Screen To Punch",function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
-end)
-
-local tab6 = Window:Tab("Admin")
-
-local newsec = tab6:Section("Section")
-
-newsec:UpdateSection("Admin Tab")
-
-local label = newsec:Label("Admin Tab","Warning Admin Script Is Not Real Admin Only Cmds And Function!")
-
-label:UpdateLabel("Admin Tab","Only Cmds And Function!")
-
-local button = newsec:Button("Admin Hub","Have Some Admin Cmds",function()
-loadstring(game:HttpGet"https://raw.githubusercontent.com/obeskit/Adminware/main/Adminware")()
-end)
-
-local button = newsec:Button("Nameless Admin(New Verison)","Nameless Admin Is Good",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/refs/heads/main/Source.lua", true))()
-end)
-
-local button = newsec:Button("Proton Admin","Proton Admin",function()
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5e6e6cc1bb32fd926764d064e2c60a3b.lua"))()
-end)
-
-local tab7 = Window:Tab("Game")
-
-local newsec = tab7:Section("Section")
-
-newsec:UpdateSection("Script Some Game")
-
-local label = newsec:Label("Script Game","You Can Use The Game Scripts")
-
-label:UpdateLabel("Script Game","You Can Use The Game Scripts")
-
-local button = newsec:Button("Build To Survive","Free Gamepass(OP)",function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/BaconBossScript/Crazy/main/Crazy'),true))()
-end)
-
-local button = newsec:Button("Build And Battle","Free Epic Katana,...",function()
-loadstring(game:HttpGet("https://rawscripts.net/raw/NUKE!-Build-and-Battle!-linhmc-hub-18647"))()
-end)
-
-local tab8 = Window:Tab("Setting")
-
-local newsec = tab8:Section("Section")
-
-newsec:UpdateSection("Setting For Hub")
-
-local label = newsec:Label("Setting For Hub","You Can Edit The Hub Same Your Setting")
-
-label:UpdateLabel("Setting For Hub","You Can Edit The Hub Same Your Setting")
-
-newsec:ColorPicker("Color Picker Title",Color3.fromRGB(39, 39, 39),function(xd)
-	print(xd)
-end)
-
-newsec:Line()
-
-newsec:KeyBind("Example Key Bind","Q",function()
-	Hawk:ToggleUI()
-end)
-
-local tab9 = Window:Tab("Anti")
-
-local newsec = tab9:Section("Section")
-
-newsec:UpdateSection("Anti...")
-
-local label = newsec:Label("See?...","uh")
-
-label:UpdateLabel("Anti Tab","Anti :v")
-
-local button = newsec:Button("Anti Afk","No Limit At 20 Minutes",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/brosula123/Anti-afk/main/Bl%C3%B8xzScript"))() 
-end)
-
-local button = newsec:Button("Anti Fling","You Can't Fling",function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Linux6699/DaHubRevival/main/AntiFling.lua'))()
-end)
-
-local button = newsec:Button("Anti Lag(Boost Fps)","It Only Helps You Increase FPS But Never Lag",function()
-_G.Ignore = {}
-_G.Settings = {
-    Players = {
-        ["Ignore Me"] = true,
-        ["Ignore Others"] = true,
-        ["Ignore Tools"] = true
-    },
-    Meshes = {
-        NoMesh = false,
-        NoTexture = false,
-        Destroy = false
-    },
-    Images = {
-        Invisible = true,
-        Destroy = false
-    },
-    Explosions = {
-        Smaller = true,
-        Invisible = false, -- Not for PVP games
-        Destroy = false -- Not for PVP games
-    },
-    Particles = {
-        Invisible = true,
-        Destroy = false
-    },
-    TextLabels = {
-        LowerQuality = true,
-        Invisible = false,
-        Destroy = false
-    },
-    MeshParts = {
-        LowerQuality = true,
-        Invisible = false,
-        NoTexture = false,
-        NoMesh = false,
-        Destroy = false
-    },
-    Other = {
-        ["FPS Cap"] = 240, -- true to uncap
-        ["No Camera Effects"] = true,
-        ["No Clothes"] = true,
-        ["Low Water Graphics"] = true,
-        ["No Shadows"] = true,
-        ["Low Rendering"] = true,    
-        ["Low Quality Parts"] = true,
-        ["Low Quality Models"] = true,
-        ["Reset Materials"] = true,
+WindUI:Popup({
+    Title = "Welcome!",
+    Icon = "info",
+    Content = "Commands " .. gradient("NoobDepTrai Hub", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Lib",
+    Buttons = {
+        {
+            Title = "Cancel",
+            --Icon = "close",
+            Callback = function() end,
+            Variant = "Tertiary",
+        },
+        {
+            Title = "Continue",
+            Icon = "arrow-right",
+            Callback = function() Confirmed = true end,
+            Variant = "Primary",
+        }
     }
+})
+
+
+repeat wait() until Confirmed
+
+local Window = WindUI:CreateWindow({
+    Title = "Cmd-Build And Battle(NoobDepTrai Hub)",
+    Icon = "door-open",
+    Author = "Credit: @Lo_Tret_Meme",
+    Folder = "CloudHub",
+    Size = UDim2.fromOffset(580, 460),
+    Transparent = true,
+    Theme = "Dark",
+    UserEnabled = false,
+    SideBarWidth = 200,
+    HasOutline = true,
+
+
+Window:EditOpenButton({
+    Title = "Cre: Lo Tret",
+    Icon = "monitor",
+    CornerRadius = UDim.new(0,16),
+    StrokeThickness = 2,
+    Color = ColorSequence.new( -- gradient
+        Color3.fromHex("FF0F7B"), 
+        Color3.fromHex("F89B29")
+    ),
+    Draggable = true,
+})
+
+
+local Tabs = {
+    Items = Window:Tab({ Title = "Items", Icon = "sword", Desc = "Get Items" }),
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
-end)
 
-local button = newsec:Button("Anti Fall","You Can't Fall To Void",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/AntiFall/main/Script"))()
-end)
+Window:SelectTab(1)
 
-local button = newsec:Button("Anti Bang","Kill Banger",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NoobDepTraiVL/Fly/refs/heads/main/Fly"))()
-end)
 
-local tab10 = Window:Tab("Bypass")
-
-local newsec = tab10:Section("Section")
-
-newsec:UpdateSection("Bypass")
-
-local label = newsec:Label("Ayo",">:O")
-
-label:UpdateLabel("Bypass","Bypass :v")
-
-local button = newsec:Button("Bypass Fps(Unlock Fps) 10[Don't Use]","Can Surpass 60 fps Limit Or Limit You To A Certain fps",function()
-setfpscap(10)
-end)
-
-local button = newsec:Button("Bypass Fps(Unlock Fps) 30[Don't Use]","Can Surpass 60 fps Limit Or Limit You To A Certain fps",function()
-setfpscap(30)
-end)
-
-local button = newsec:Button("Bypass Fps(Unlock Fps) 60","Default",function()
-setfpscap(60)
-end)
-
-local button = newsec:Button("Bypass Fps(Unlock Fps) 120","It Only Unlocks To Pass 60 fps Not Adjusts fps To 120",function()
-setfpscap(120)
-end)
-
-local button = newsec:Button("Bypass Fps(Unlock Fps) 240","It's Just Unlimited Not Adjusted...",function()
-setfpscap(240)
-end)
-
-local button = newsec:Button("Bypass Fps(Unlock Fps) Inf","Unlimited Bypass Fps",function()
-setfpscap(math.huge)
-end)
-
-local tab11 = Window:Tab("Update")
-
-local newsec = tab11:Section("Section")
-
-newsec:UpdateSection("Hub Update")
-
-local label = newsec:Label("See?","uh")
-
-label:UpdateLabel("Version: 1.0","The Moment NoobLoTret Hub Was Created")
-
-newsec:Paragraph("Version 1.5",{"[+] Add More Tabs","[+] Add More Buttons","[+] More Features","[+] Fix Bugs"})
-
-newsec:Line()
-
-newsec:Paragraph("Version 1.6",{"[+] Add More Tabs","[+] Add More Buttons","[+] More Features"})
-
-newsec:Line()
-
-newsec:Paragraph("Version 1.7",{"[+] Add More Tabs","[+] Add More Buttons","[+] More Features","[+] Trolling"})
-
-newsec:Line()
-
-newsec:Paragraph("Version 1.7.21",{"[+] Add Tab","[+] Add Slider","[+] More Features","[+] Trolling"})
-
-newsec:Line()
-
-newsec:Paragraph("Version 1.7.22",{"[+] Fix Text"})
-
-newsec:Line()
-
-newsec:Paragraph("Version 1.8",{"[+] Add More Tabs","[+] Add More Buttons","[+] Add So Many Features Player Tab"})
-
-newsec:Line()
-
-newsec:Paragraph("Version 1.9",{"[+] Add Tab","[+] Add Textbox","[+] Add More Features Player Tab","[+] More Features"})
-
-local tab12 = Window:Tab("Credit")
-
-local newsec = tab12:Section("Section")
-
-newsec:UpdateSection("Credit Hub")
-
-local label = newsec:Label("lol","V2, i will use MoonSec(i think)")
-
-label:UpdateLabel("Credit: @YTB_NoobMemeRoblox","Youtube")
-
-local Notifications = Hawk:AddNotifications()
-
-Notifications:Notification("Thank For Use","Have Fun With Script","Let's Go!",5)
-
-Notifications:Notify("Hub is currently being updated","Please wait, Hub will be updated soon","Notify",function()
-end)
+Tabs.ParagraphTab:Paragraph({
+    Title = "Default",
+    Desc = "Normal Paragraph",
+    Image = "bird",
+    --Color = "Red"
+    Buttons = {
+        {
+            Title = "Ok!",
+        },
+        {
+            Title = "Ok!",
+        }
+    }
+})
+Tabs.ParagraphTab:Paragraph({
+    Title = "Danger (Error)",
+    Desc = "Red Paragraph",
+    Image = "triangle-alert",
+    Color = "Red",
+    Buttons = {
+        {
+            Title = "Ok!",
+        },
+        {
+            Title = "Ok!",
+        }
+    }
+})
+Tabs.ParagraphTab:Paragraph({
+    Title = "Warning",
+    Desc = "Orange Paragraph",
+    Image = "triangle-alert",
+    Color = "Orange",
+    Buttons = {
+        {
+            Title = "Ok!",
+        },
+        {
+            Title = "Ok!",
+        }
+    }
+})
+Tabs.ParagraphTab:Paragraph({
+    Title = "Success",
+    Desc = "Green Paragraph",
+    Image = "check",
+    Color = "Green",
+    Buttons = {
+        {
+            Title = "Ok!",
+        },
+        {
+            Title = "Ok!",
+        }
+    }
+})
+Tabs.ParagraphTab:Paragraph({
+    Title = "Info",
+    Desc = "Blue Paragraph",
+    Image = "info",
+    Color = "Blue",
+    Buttons = {
+        {
+            Title = "Ok!",
+        },
+        {
+            Title = "Ok!",
+        }
+    }
+})
+Tabs.ParagraphTab:Paragraph({
+    Title = "Grey",
+    Desc = "Grey Paragraph",
+    Image = "bird",
+    Color = "Grey",
+    Buttons = {
+        {
+            Title = "Ok!",
+        },
+        {
+            Title = "Ok!",
+        }
+    }
+})
+Tabs.ParagraphTab:Paragraph({
+    Title = "White",
+    Desc = "White Paragraph",
+    Image = "bird",
+    Color = "White",
+    Buttons = {
+        {
+            Title = "Ok!",
+        },
+        {
+            Title = "Ok!",
+        }
+    }
+})
