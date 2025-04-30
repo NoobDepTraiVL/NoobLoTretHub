@@ -39,7 +39,6 @@ WindUI:Popup({
     }
 })
 
-
 repeat wait() until Confirmed
 
 local Window = WindUI:CreateWindow({
@@ -53,7 +52,7 @@ local Window = WindUI:CreateWindow({
     UserEnabled = false,
     SideBarWidth = 200,
     HasOutline = true,
-
+})
 
 Window:EditOpenButton({
     Title = "Cre: Lo Tret",
@@ -67,7 +66,6 @@ Window:EditOpenButton({
     Draggable = true,
 })
 
-
 local Tabs = {
     Items = Window:Tab({ Title = "Items", Icon = "swords", Desc = "Get Items" }),
     Player = Window:Tab({ Title = "Player", Icon = "eye", Desc = "Edit Player" }),
@@ -76,7 +74,6 @@ local Tabs = {
     WindowTab = Window:Tab({ Title = "Made By @Lo_Tret_Meme ", Icon = "settings", Desc = "Only Youtube" }),
     be = Window:Divider(),
 }
-
 
 Tabs.Items:Paragraph({
     Title = ":vipsword(vs)",
@@ -89,7 +86,7 @@ Tabs.Items:Paragraph({
     Image = "plus",
 })
 Tabs.Items:Paragraph({
-    Title = ":megavipsword(mgs)",
+    Title = ":megavipsword(mvs)",
     Desc = "Get Mega Vip Sword",
     Image = "sword",
 })
