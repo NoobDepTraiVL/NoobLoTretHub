@@ -72,10 +72,10 @@ local Tabs = {
     Items = Window:Tab({ Title = "Items", Icon = "swords", Desc = "Get Items" }),
     Player = Window:Tab({ Title = "Player", Icon = "eye", Desc = "Edit Player" }),
     Teleport = Window:Tab({ Title = "Teleport", Icon = "sparkles", Desc = "Teleport To Everywhere" }),
+    b = Window:Divider(),
+    WindowTab = Window:Tab({ Title = "Made By @Lo_Tret_Meme ", Icon = "settings", Desc = "Only Youtube" }),
+    be = Window:Divider(),
 }
-
-b = Window:Divider(),
-Window:SelectTab(1)
 
 
 Tabs.Items:Paragraph({
