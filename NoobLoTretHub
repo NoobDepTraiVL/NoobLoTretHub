@@ -84,76 +84,31 @@ Tabs.Items:Paragraph({
 })
 Tabs.Items:Paragraph({
     Title = ":medkit5(mk5)",
-    Desc = "Get Medkit(5 uses)",
+    Desc = "Get Medkit(5 Uses)",
     Image = "plus",
 })
-Tabs.ParagraphTab:Paragraph({
-    Title = "Warning",
-    Desc = "Orange Paragraph",
-    Image = "triangle-alert",
-    Color = "Orange",
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
+Tabs.Items:Paragraph({
+    Title = ":megavipsword(mgs)",
+    Desc = "Get Mega Vip Sword",
+    Image = "sword",
 })
-Tabs.ParagraphTab:Paragraph({
-    Title = "Success",
-    Desc = "Green Paragraph",
-    Image = "check",
-    Color = "Green",
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
+Tabs.Items:Paragraph({
+    Title = ":medkit15(mk15)",
+    Desc = "Get Medkit(15 Uses)",
+    Image = "plus",
 })
-Tabs.ParagraphTab:Paragraph({
-    Title = "Info",
-    Desc = "Blue Paragraph",
-    Image = "info",
-    Color = "Blue",
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
+Tabs.Items:Paragraph({
+    Title = ":doublegravitycoil(dgc)",
+    Desc = "Get Double Gravity Coil",
+    Image = "sparkle",
 })
-Tabs.ParagraphTab:Paragraph({
-    Title = "Grey",
-    Desc = "Grey Paragraph",
-    Image = "bird",
-    Color = "Grey",
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
+Tabs.Items:Paragraph({
+    Title = ":epickatana(ek)",
+    Desc = "Get Epic Katana",
+    Image = "sword",
 })
-Tabs.ParagraphTab:Paragraph({
-    Title = "White",
-    Desc = "White Paragraph",
-    Image = "bird",
-    Color = "White",
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
+Tabs.Items:Paragraph({
+    Title = ":fusioncoil(fc)",
+    Desc = "Get Fusion Coil",
+    Image = "sparkles",
 })
