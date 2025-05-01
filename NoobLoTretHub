@@ -117,6 +117,7 @@ local commands = {
     "+ ubervip",
     "+ secretisland",
     "+ leaderboard",
+    ":base(b) [1-9]",
     ":vipitems(viptools,vt,vi)",
     ":megavipitems(megaviptools,mvt,mvi)",
     ":ubervipitems(uberviptools,uvt,uvi)",
@@ -125,7 +126,9 @@ local commands = {
     ":overseer(os)",
     ":korbloxgeneral(kg,kgl)",
     ":heal(h)",
-
+    ":goto(to)",
+    ":speed(ws) [number]",
+    ":jumppower(jp) [number]",
 }
 
 local function createLabel(txt)
