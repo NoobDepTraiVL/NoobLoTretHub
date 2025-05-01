@@ -18,7 +18,7 @@ local Confirmed = false
 WindUI:Popup({
     Title = "Welcome :D",
     Icon = "info",
-    Content = "Commands  " .. gradient("", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Script",
+    Content = "Commands  " .. gradient("Cmds(Build And Battle)", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Script",
     Buttons = {
         { Title = "Cancel ;-;", Icon = "close", Callback = function() end, Variant = "Tertiary" },
         { Title = "Continue :D", Icon = "arrow-right", Callback = function() Confirmed = true end, Variant = "Primary" }
