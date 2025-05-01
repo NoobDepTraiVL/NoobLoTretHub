@@ -127,12 +127,13 @@ local commands = {
     ":overseer(os)",
     ":korbloxgeneral(kg,kgl)",
     ":heal(h)",
-    ":goto(to)",
+    ":goto(to) [player]",
     ":speed(ws) [number]",
     ":jumppower(jp) [number]",
     ":noclip(nc)",
     ":unnoclip(clip)",
     ":reset(rs)",
+    ":dropitem(droptool,dt,di)",
 }
 
 local function createLabel(txt)
