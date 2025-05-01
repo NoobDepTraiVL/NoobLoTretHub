@@ -135,6 +135,7 @@ local commands = {
     ":unnoclip (clip)",
     ":reset (rs)",
     ":dropitem (droptool, dt, di)",
+    ":dropitems (droptools, dts, dis)",
 }
 
 local function createLabel(txt)
