@@ -1,181 +1,154 @@
-local WindUI = loadstring(game:HttpGet("https://tree-hub.vercel.app/api/UI/WindUI"))()
+local CoreGui = game:GetService("CoreGui")
+local TweenService = game:GetService("TweenService")
 
-function gradient(text, startColor, endColor)
-    local result = ""
-    local length = #text
+local gui = Instance.new("ScreenGui", CoreGui)
+gui.Name = "Cmds(Build And Battle)"
+gui.ResetOnSpawn = false
 
-    for i = 1, length do
-        local t = (i - 1) / math.max(length - 1, 1)
-        local r = math.floor((startColor.R + (endColor.R - startColor.R) * t) * 255)
-        local g = math.floor((startColor.G + (endColor.G - startColor.G) * t) * 255)
-        local b = math.floor((startColor.B + (endColor.B - startColor.B) * t) * 255)
+local scaleFactor = 0.8
+local baseWidth, baseHeight = 300, 400
 
-        local char = text:sub(i, i)
-        result = result .. "<font color=\"rgb(" .. r ..", " .. g .. ", " .. b .. ")\">" .. char .. "</font>"
+local frame = Instance.new("Frame", gui)
+frame.Size = UDim2.new(0, baseWidth * scaleFactor, 0, baseHeight * scaleFactor)
+frame.Position = UDim2.new(0.5, -(baseWidth * scaleFactor) / 2, 0.5, -(baseHeight * scaleFactor) / 2)
+frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+frame.Active = true
+frame.Draggable = true
+frame.Name = "MainFrame"
+Instance.new("UICorner", frame).CornerRadius = UDim.new(0, 10)
+
+local title = Instance.new("TextLabel", frame)
+title.Size = UDim2.new(1, -70, 0, 25 * scaleFactor)
+title.Position = UDim2.new(0, 10, 0, 5)
+title.Text = "Cmds(Build And Battle)"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1
+title.Font = Enum.Font.GothamBold
+title.TextSize = 16 * scaleFactor
+title.TextXAlignment = Enum.TextXAlignment.Left
+
+local closeBtn = Instance.new("TextButton", frame)
+closeBtn.Size = UDim2.new(0, 22 * scaleFactor, 0, 22 * scaleFactor)
+closeBtn.Position = UDim2.new(1, -30, 0, 5)
+closeBtn.Text = "X"
+closeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+closeBtn.BackgroundColor3 = Color3.fromRGB(50, 0, 0)
+closeBtn.Font = Enum.Font.GothamBold
+closeBtn.TextSize = 14 * scaleFactor
+Instance.new("UICorner", closeBtn).CornerRadius = UDim.new(0, 6)
+closeBtn.MouseButton1Click:Connect(function()
+    gui:Destroy()
+end)
+
+local minBtn = Instance.new("TextButton", frame)
+minBtn.Size = UDim2.new(0, 22 * scaleFactor, 0, 22 * scaleFactor)
+minBtn.Position = UDim2.new(1, -60, 0, 5)
+minBtn.Text = "-"
+minBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+minBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 0)
+minBtn.Font = Enum.Font.GothamBold
+minBtn.TextSize = 14 * scaleFactor
+Instance.new("UICorner", minBtn).CornerRadius = UDim.new(0, 6)
+
+local isMinimized = false
+minBtn.MouseButton1Click:Connect(function()
+    isMinimized = not isMinimized
+    local goalSize = isMinimized
+        and UDim2.new(0, baseWidth * scaleFactor, 0, 50 * scaleFactor)
+        or UDim2.new(0, baseWidth * scaleFactor, 0, baseHeight * scaleFactor)
+    TweenService:Create(frame, TweenInfo.new(0.3, Enum.EasingStyle.Quad), {Size = goalSize}):Play()
+    for _, v in ipairs(frame:GetChildren()) do
+        if v:IsA("TextBox") or v:IsA("ScrollingFrame") then
+            v.Visible = not isMinimized
+        end
     end
+end)
 
-    return result
-end
+local search = Instance.new("TextBox", frame)
+search.Size = UDim2.new(1, -20, 0, 26 * scaleFactor)
+search.Position = UDim2.new(0, 10, 0, 35 * scaleFactor)
+search.Text = ""
+search.TextColor3 = Color3.fromRGB(255, 255, 255)
+search.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+search.Font = Enum.Font.Gotham
+search.TextSize = 14 * scaleFactor
+search.ClearTextOnFocus = false
+Instance.new("UICorner", search).CornerRadius = UDim.new(0, 6)
 
-local Confirmed = false
+local searchIcon = Instance.new("TextLabel", search)
+searchIcon.Size = UDim2.new(0, 20, 1, 0)
+searchIcon.Position = UDim2.new(0, 5, 0, 0)
+searchIcon.Text = ""
+searchIcon.TextColor3 = Color3.fromRGB(200, 200, 200)
+searchIcon.BackgroundTransparency = 1
+searchIcon.Font = Enum.Font.Gotham
+searchIcon.TextSize = 14 * scaleFactor
+searchIcon.TextXAlignment = Enum.TextXAlignment.Left
 
-WindUI:Popup({
-    Title = "Cmds(Build And Battle)",
-    Icon = "info",
-    Content = "Cmds For " .. gradient("Build And Battle", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Script",
-    Buttons = {
-        {
-            Title = "Cancel",
-            Icon = "close",
-            Callback = function() end,
-            Variant = "Tertiary", -- Primary, Secondary, Tertiary
-        },
-        {
-            Title = "Continue",
-            Icon = "arrow-right",
-            Callback = function() Confirmed = true end,
-            Variant = "Primary", -- Primary, Secondary, Tertiary
-        }
-    }
-})
+search.TextXAlignment = Enum.TextXAlignment.Right
 
+local scroll = Instance.new("ScrollingFrame", frame)
+scroll.Size = UDim2.new(1, -20, 1, -80 * scaleFactor)
+scroll.Position = UDim2.new(0, 10, 0, 70 * scaleFactor)
+scroll.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+scroll.BorderSizePixel = 0
+scroll.ScrollBarThickness = 5
+scroll.CanvasSize = UDim2.new(0, 0, 0, 0)
+scroll.AutomaticCanvasSize = Enum.AutomaticSize.Y
+Instance.new("UICorner", scroll).CornerRadius = UDim.new(0, 8)
 
-repeat wait() until Confirmed
+local listLayout = Instance.new("UIListLayout", scroll)
+listLayout.SortOrder = Enum.SortOrder.LayoutOrder
+listLayout.Padding = UDim.new(0, 4)
 
-local Window = WindUI:CreateWindow({
-    Title = "Cmds(Build And Battle)",
-    Icon = "house",
-    Author = "Made By: @Lo_Tret_Meme",
-    Folder = "CloudHub",
-    Size = UDim2.fromOffset(320, 200),
-    Transparent = true,
-    Theme = "Dark",
-    UserEnabled = false,
-    SideBarWidth = 200,
-    HasOutline = true,
-})
+local commands = {
+    ":vipsword(vs)",
+    ":medkit5(mk5)",
+    ":megavipsword(mvs)",
+    ":medkit15(mk15)",
+    ":doublegravitycoil(dgc)",
+    ":epickatana(ek)",
+    ":fusioncoil(fc)",
+    ":medkitunlimited(mku)",
+    ":superfreezeray(sfr)",
+    ":teleportlocation(tplc)",
+    "+ vip",
+    "+ megavip",
+    "+ ubervip",
+    "+ secretisland",
+    "+ leaderboard",
+    ":vipitems(viptools,vt,vi)",
+    ":megavipitems(megaviptools,mvt,mvi)",
+    ":ubervipitems(uberviptools,uvt,uvi)",
+    ":point",
+    ":knight(kt)",
+    ":overseer(os)",
+    ":korbloxgeneral(kg,kgl)",
+    ":heal(h)",
 
-Window:EditOpenButton({
-    Title = "Cmds(Build And Battle)",
-    Icon = "monitor",
-    CornerRadius = UDim.new(0,16),
-    StrokeThickness = 2,
-    Color = ColorSequence.new(
-        Color3.fromHex("FF0F7B"), 
-        Color3.fromHex("F89B29")
-    ),
-    Draggable = true,
-})
-
-
-local Tabs = {
-    Items = Window:Tab({ Title = "Items", Icon = "swords", Desc = "Get Items" }),
-    Player = Window:Tab({ Title = "Player", Icon = "eye", Desc = "Edit Player" }),
-    Teleport = Window:Tab({ Title = "Teleport", Icon = "sparkles", Desc = "Teleport To Everywhere" }),
-    Misc = Window:Tab({ Title = "Misc", Icon = "sparkle", Desc = "Something Cmds" }),
-    b = Window:Divider(),
-    WindowTab = Window:Tab({ Title = "Made By @Lo_Tret_Meme ", Icon = "settings", Desc = "Only Youtube" }),
-    be = Window:Divider(),
 }
 
-Window:SelectTab(1)
+local function createLabel(txt)
+    local lbl = Instance.new("TextLabel", scroll)
+    lbl.Size = UDim2.new(1, -10, 0, 24 * scaleFactor)
+    lbl.Text = txt
+    lbl.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+    lbl.TextColor3 = Color3.fromRGB(255, 255, 255)
+    lbl.Font = Enum.Font.Gotham
+    lbl.TextSize = 13 * scaleFactor
+    lbl.TextXAlignment = Enum.TextXAlignment.Left
+    Instance.new("UICorner", lbl).CornerRadius = UDim.new(0, 6)
+end
 
+for _, v in ipairs(commands) do
+    createLabel(v)
+end
 
-Tabs.Items:Paragraph({
-    Title = "Default",
-    Desc = "Normal Paragraph",
-    Image = "bird",
-    --Color = "Red"
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
-})
-Tabs.Items:Paragraph({
-    Title = "Danger (Error)",
-    Desc = "Red Paragraph",
-    Image = "triangle-alert",
-    Color = "Red",
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
-})
-Tabs.Items:Paragraph({
-    Title = "Warning",
-    Desc = "Orange Paragraph",
-    Image = "triangle-alert",
-    Color = "Orange",
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
-})
-Tabs.Items:Paragraph({
-    Title = "Success",
-    Desc = "Green Paragraph",
-    Image = "check",
-    Color = "Green",
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
-})
-Tabs.Items:Paragraph({
-    Title = "Info",
-    Desc = "Blue Paragraph",
-    Image = "info",
-    Color = "Blue",
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
-})
-Tabs.Items:Paragraph({
-    Title = "Grey",
-    Desc = "Grey Paragraph",
-    Image = "bird",
-    Color = "Grey",
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
-})
-Tabs.Items:Paragraph({
-    Title = "White",
-    Desc = "White Paragraph",
-    Image = "bird",
-    Color = "White",
-    Buttons = {
-        {
-            Title = "Ok!",
-        },
-        {
-            Title = "Ok!",
-        }
-    }
-})
+search:GetPropertyChangedSignal("Text"):Connect(function()
+    local text = search.Text:lower()
+    for _, v in ipairs(scroll:GetChildren()) do
+        if v:IsA("TextLabel") then
+            v.Visible = text == "" or v.Text:lower():find(text)
+        end
+    end
+end)
