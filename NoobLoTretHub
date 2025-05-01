@@ -102,6 +102,7 @@ listLayout.SortOrder = Enum.SortOrder.LayoutOrder
 listLayout.Padding = UDim.new(0, 4)
 
 local commands = {
+    ":cmds",
     ":vipsword(vs)",
     ":medkit5(mk5)",
     ":megavipsword(mvs)",
@@ -129,6 +130,9 @@ local commands = {
     ":goto(to)",
     ":speed(ws) [number]",
     ":jumppower(jp) [number]",
+    ":noclip(nc)",
+    ":unnoclip(clip)",
+    ":reset(rs)",
 }
 
 local function createLabel(txt)
