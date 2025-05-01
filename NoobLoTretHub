@@ -3,50 +3,35 @@ local WindUI = loadstring(game:HttpGet("https://tree-hub.vercel.app/api/UI/WindU
 function gradient(text, startColor, endColor)
     local result = ""
     local length = #text
-
     for i = 1, length do
         local t = (i - 1) / math.max(length - 1, 1)
         local r = math.floor((startColor.R + (endColor.R - startColor.R) * t) * 255)
         local g = math.floor((startColor.G + (endColor.G - startColor.G) * t) * 255)
         local b = math.floor((startColor.B + (endColor.B - startColor.B) * t) * 255)
-
         local char = text:sub(i, i)
         result = result .. "<font color=\"rgb(" .. r ..", " .. g .. ", " .. b .. ")\">" .. char .. "</font>"
     end
-
     return result
 end
 
 local Confirmed = false
-
 WindUI:Popup({
-    Title = "Cmds",
+    Title = "Welcome :D",
     Icon = "info",
-    Content = "Commands " .. gradient("NoobDepTrai Hub", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Script",
+    Content = "Commands  " .. gradient("", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Script",
     Buttons = {
-        {
-            Title = "Cancel",
-            Icon = "close",
-            Callback = function() end,
-            Variant = "Tertiary",
-        },
-        {
-            Title = "Continue",
-            Icon = "arrow-right",
-            Callback = function() Confirmed = true end,
-            Variant = "Primary",
-        }
+        { Title = "Cancel ;-;", Icon = "close", Callback = function() end, Variant = "Tertiary" },
+        { Title = "Continue :D", Icon = "arrow-right", Callback = function() Confirmed = true end, Variant = "Primary" }
     }
 })
-
-repeat wait() until Confirmed
+repeat task.wait() until Confirmed
 
 local Window = WindUI:CreateWindow({
-    Title = "Cmd-Build And Battle(NoobDepTrai Hub)",
+    Title = "Cmds(Build And Battle)",
     Icon = "house",
-    Author = "Credit: @Lo_Tret_Meme",
+    Author = "Script By: @Lo_Tret_Meme",
     Folder = "CloudHub",
-    Size = UDim2.fromOffset(340, 220),
+    Size = UDim2.fromOffset(320, 200),
     Transparent = true,
     Theme = "Dark",
     UserEnabled = false,
@@ -55,58 +40,31 @@ local Window = WindUI:CreateWindow({
 })
 
 Window:EditOpenButton({
-    Title = "Cre: Lo Tret",
+    Title = "Cmds",
     Icon = "monitor",
     CornerRadius = UDim.new(0,16),
     StrokeThickness = 2,
-    Color = ColorSequence.new(
-        Color3.fromHex("FF0F7B"), 
-        Color3.fromHex("F89B29")
-    ),
+    Color = ColorSequence.new(Color3.fromHex("FF0F7B"), Color3.fromHex("F89B29")),
     Draggable = true,
 })
 
 local Tabs = {
     Items = Window:Tab({ Title = "Items", Icon = "swords", Desc = "Get Items" }),
-    Player = Window:Tab({ Title = "Player", Icon = "eye", Desc = "Edit Player" }),
+    Player = Window:Tab({ Title = "Player", Icon = "dna", Desc = "Edit Player" }),
     Teleport = Window:Tab({ Title = "Teleport", Icon = "sparkles", Desc = "Teleport To Everywhere" }),
+    Misc = Window:Tab({ Title = "Misc", Icon = "sparkle", Desc = "Something" }),
     b = Window:Divider(),
     WindowTab = Window:Tab({ Title = "Made By @Lo_Tret_Meme ", Icon = "settings", Desc = "Only Youtube" }),
     be = Window:Divider(),
 }
 
-Tabs.Items:Paragraph({
-    Title = ":vipsword(vs)",
-    Desc = "Get Vip Sword",
-    Image = "sword",
-})
-Tabs.Items:Paragraph({
-    Title = ":medkit5(mk5)",
-    Desc = "Get Medkit(5 Uses)",
-    Image = "plus",
-})
-Tabs.Items:Paragraph({
-    Title = ":megavipsword(mvs)",
-    Desc = "Get Mega Vip Sword",
-    Image = "sword",
-})
-Tabs.Items:Paragraph({
-    Title = ":medkit15(mk15)",
-    Desc = "Get Medkit(15 Uses)",
-    Image = "plus",
-})
-Tabs.Items:Paragraph({
-    Title = ":doublegravitycoil(dgc)",
-    Desc = "Get Double Gravity Coil",
-    Image = "sparkle",
-})
-Tabs.Items:Paragraph({
-    Title = ":epickatana(ek)",
-    Desc = "Get Epic Katana",
-    Image = "sword",
-})
-Tabs.Items:Paragraph({
-    Title = ":fusioncoil(fc)",
-    Desc = "Get Fusion Coil",
-    Image = "sparkles",
-})
+Window:SelectTab(1)
+Tabs.Items:Paragraph({ Title = ":vipsword(vs)", Desc = "Get Vip Sword", Image = "sword" })
+Tabs.Items:Paragraph({ Title = ":medkit5(mk5)", Desc = "Get Medkit(5 Uses)", Image = "plus" })
+Tabs.Items:Paragraph({ Title = ":megavipsword(mvs)", Desc = "Get Mega Vip Sword", Image = "sword" })
+Tabs.Items:Paragraph({ Title = ":medkit15(mk15)", Desc = "Get Medkit(15 Uses)", Image = "plus" })
+Tabs.Items:Paragraph({ Title = ":doublegravitycoil(dgc)", Desc = "Get Double Gravity Coil", Image = "sparkle" })  
+Tabs.Items:Paragraph({ Title = ":epickatana(ek)", Desc = "Get Epic Katana", Image = "swords" }) 
+Tabs.Items:Paragraph({ Title = ":fusioncoil(fc)", Desc = "Get Fusion Coil", Image = "sparkles" })
+Tabs.Items:Paragraph({ Title = ":medkitunlimited(mku)", Desc = "Get Medkit Unlimited[0]", Image = "plus" })
+Tabs.Items:Paragraph({ Title = ":superfreezeray(sfr)", Desc = "Get Super Freeze Ray", Image = "sparkles" })  
