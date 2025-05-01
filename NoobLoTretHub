@@ -122,6 +122,7 @@ local commands = {
     ":vipitems (viptools, vt, vi)",
     ":megavipitems (megaviptools, mvt, mvi)",
     ":ubervipitems (uberviptools, uvt, uvi)",
+    ":allitems (alltools, ats, ais)",
     ":point",
     ":knight (kt)",
     ":overseer (os)",
