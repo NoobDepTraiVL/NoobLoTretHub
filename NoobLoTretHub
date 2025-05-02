@@ -136,6 +136,7 @@ local commands = {
     ":reset (rs)",
     ":dropitem (droptool, dt, di)",
     ":dropitems (droptools, dts, dis)",
+    ":fly",
 }
 
 local function createLabel(txt)
