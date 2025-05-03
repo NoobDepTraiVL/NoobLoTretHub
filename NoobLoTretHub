@@ -1,3 +1,7 @@
+local existing = game:GetService("CoreGui"):FindFirstChild("Cmds(Build And Battle)")
+if existing then
+	existing:Destroy()
+end
 local CoreGui = game:GetService("CoreGui")
 local TweenService = game:GetService("TweenService")
 
@@ -30,7 +34,7 @@ title.TextXAlignment = Enum.TextXAlignment.Left
 local closeBtn = Instance.new("TextButton", frame)
 closeBtn.Size = UDim2.new(0, 22 * scaleFactor, 0, 22 * scaleFactor)
 closeBtn.Position = UDim2.new(1, -30, 0, 5)
-closeBtn.Text = "X"
+closeBtn.Text = "x"
 closeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 closeBtn.BackgroundColor3 = Color3.fromRGB(50, 0, 0)
 closeBtn.Font = Enum.Font.GothamBold
