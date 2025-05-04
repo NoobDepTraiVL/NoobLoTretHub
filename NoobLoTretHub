@@ -79,16 +79,6 @@ search.TextSize = 14 * scaleFactor
 search.ClearTextOnFocus = false
 Instance.new("UICorner", search).CornerRadius = UDim.new(0, 6)
 
-local searchIcon = Instance.new("TextLabel", search)
-searchIcon.Size = UDim2.new(0, 20, 1, 0)
-searchIcon.Position = UDim2.new(0, 5, 0, 0)
-searchIcon.Text = ""
-searchIcon.TextColor3 = Color3.fromRGB(200, 200, 200)
-searchIcon.BackgroundTransparency = 1
-searchIcon.Font = Enum.Font.Gotham
-searchIcon.TextSize = 14 * scaleFactor
-searchIcon.TextXAlignment = Enum.TextXAlignment.Left
-
 search.TextXAlignment = Enum.TextXAlignment.Right
 
 local scroll = Instance.new("ScrollingFrame", frame)
