@@ -80,7 +80,7 @@ search.TextSize = 14 * scaleFactor
 search.ClearTextOnFocus = false
 Instance.new("UICorner", search).CornerRadius = UDim.new(0, 6)
 
-search.TextXAlignment = Enum.TextXAlignment.Right
+search.TextXAlignment = Enum.TextXAlignment.Left
 
 local scroll = Instance.new("ScrollingFrame", frame)
 scroll.Size = UDim2.new(1, -20, 1, -80 * scaleFactor)
@@ -126,7 +126,6 @@ local commands = {
     ":goto (to) [player]",
     ":speed (ws) [number]",
     ":jumppower (jp) [number]",
-    ":gravity (grv) [number]"
     ":noclip (nc)",
     ":unnoclip (clip)",
     ":reset (rs)",
