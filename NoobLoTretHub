@@ -142,6 +142,7 @@ local commands = {
     ":dropitems (droptools, dts, dis)",
     ":fly",
     ":rejoin (rj)",
+    ":serverhop (svhop)",
 }
 
 local function createLabel(txt)
