@@ -123,7 +123,6 @@ local commands = {
     ":overseer (os)",
     ":korbloxgeneral (kg, kgl)",
     ":heal (h)",
-    ":goto (to) [player]",
     ":speed (ws) [number]",
     ":jumppower (jp) [number]",
     ":noclip (nc)",
